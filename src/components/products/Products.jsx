@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 
 const Products = () => {
     const { productData } = useContext(UserContext)
+    console.log( productData )
 
     return (
         <Container>

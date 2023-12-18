@@ -223,6 +223,47 @@ jobs:
 [
   {
     "name": "product1",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product2",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product3",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product4",
+    "img": "images/26.jpg"
+  },
+  {
+    "name": "product5",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product6",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product7",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product7",
+    "img": "images/20.jpg"
+  },
+  {
+    "name": "product7",
+    "img": "images/20.jpg"
+  }
+]
+```
+<!-- 2nd formate -->
+```
+[
+  {
+    "name": "product1",
     "img": "https://drive.google.com/thumbnail?id=1asJVyh0t-67hB3othHFSB60ngJAUvOR7"
   },
   {

@@ -1,11 +1,17 @@
-# ERROR
+# All the ERRORS from this project
 
+
+## Problem - 1
 ```
 node:internal/modules/cjs/loader:1134
   const err = new Error(message);
               ^
-
+```
+##### Error: Cannot find module '@rollup/rollup-linux-x64-gnu'
+`
 Error: Cannot find module '@rollup/rollup-linux-x64-gnu'
+`
+```
 Require stack:
 - /home/runner/work/arifsbd/arifsbd/node_modules/rollup/dist/native.js
     at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
@@ -27,8 +33,10 @@ Require stack:
 Node.js v18.19.0
 Error: Process completed with exit code 1.
 ```
+##### Solution -1 : node_modules remove and package.json.lock file remove and run: ` yarn ` again
 
-# React + Vite
+
+# React Vite app deploy on github pages using GH actions
 
 ```
 # Simple workflow for deploying static content to GitHub Pages

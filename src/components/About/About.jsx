@@ -13,7 +13,7 @@ const About = () => {
                 <div className=' grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-5'>
                     <div className=' flex justify-center items-center '>
                         <video autoPlay muted loop className='h-auto w-auto max-h-full max-w-full rounded-lg shadow-xl shadow-slate-300 '>
-                            {/* <source src=" /arifs_bd/images/video.mp4" type="video/mp4" /> */}
+                            <source src=" /arifsbd/images/video.mp4" type="video/mp4" />
                             <h1>video</h1>
                         </video>
                     </div>

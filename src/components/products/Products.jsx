@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 const Products = () => {
     const { productData } = useContext(UserContext)
-    console.log( productData )
+    // console.log( productData )
 
     return (
         <Container>
@@ -48,7 +48,7 @@ const Products = () => {
                     className="py-5 px-2"
                 >
                     {
-                        productData.map((item, index) => (
+                        productData && productData.map((item, index) => (
                             <SwiperSlide key={index} className=' h-auto'>
                                 <Link>
                                     <div className=' flex justify-center items-center h-32 overflow-hidden border-2 border-slate-200 rounded-lg '>

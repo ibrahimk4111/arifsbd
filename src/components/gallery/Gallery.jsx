@@ -6,7 +6,8 @@ import { Event, EventOutlined, FormatQuoteTwoTone, ImageAspectRatio, Imagesearch
 
 const Gallery = () => {
     const { galleryData } = useContext(UserContext)
-    console.log( galleryData )
+    // console.log( galleryData )
+    
     return (
         <div className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed '>
             <Container id='gallery' className='md:py-10 py-5'>
@@ -19,7 +20,7 @@ const Gallery = () => {
                     <h1 className=' w-[80%] text-justify py-5 text-white'>Every year we arrange and participate several international functions and events to develop agricultural growth of Bangladesh. </h1>
                 </div>
 
-                {galleryData.length > 0 ?
+                {galleryData && galleryData.length > 0 ?
                     (
                         <section >
                             {

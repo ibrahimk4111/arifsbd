@@ -33,8 +33,9 @@ Require stack:
 Node.js v18.19.0
 Error: Process completed with exit code 1.
 ```
-##### Solution -1 : node_modules remove and package.json.lock file remove and run: ` yarn ` again
+#### Solution for problem - 1: Delete node_modules and package.json.lock file and run: ` yarn ` again
 
+#### Suggestion - 1: You should not upload files more than 50 MB in github
 
 # React Vite app deploy on github pages using GH actions
 

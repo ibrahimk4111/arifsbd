@@ -13,7 +13,8 @@ const About = () => {
                 <div className=' grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-5'>
                     <div className=' flex justify-center items-center '>
                         <video autoPlay muted loop className='h-auto w-auto max-h-full max-w-full rounded-lg shadow-xl shadow-slate-300 '>
-                            <source src=" /arifs_bd/images/video.mp4" type="video/mp4" />
+                            {/* <source src=" /arifs_bd/images/video.mp4" type="video/mp4" /> */}
+                            <h1>video</h1>
                         </video>
                     </div>
 
@@ -28,7 +29,7 @@ const About = () => {
                                 <p className=' md:block hidden'>One philosophy, that of high yield, has contributed to our continued growth and established our professional reputation, dedication, product selection and technological expertise is reflected in every aspect of Arifs activities. Our philosophy had been and always will be to serve our customers with value and assurance.</p>
                             </div>
                             <Link>
-                                <button style={{ backgroundImage: `url(/arifs_bd/images/blob.gif)` }} className=' bg-cover h-20 w-20 text-white mt-5 uppercase'>Details</button>
+                                <button style={{ backgroundImage: `url(/arifsbd/images/blob.gif)` }} className=' bg-cover h-20 w-20 text-white mt-5 uppercase'>Details</button>
                             </Link>
                         </div>
                     </div>

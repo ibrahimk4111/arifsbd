@@ -1,3 +1,31 @@
+# ERROR 
+```
+node:internal/modules/cjs/loader:1134
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module '@rollup/rollup-linux-x64-gnu'
+Require stack:
+- /home/runner/work/arifsbd/arifsbd/node_modules/rollup/dist/native.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/runner/work/arifsbd/arifsbd/node_modules/rollup/dist/native.js:60:48)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:202:29) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/runner/work/arifsbd/arifsbd/node_modules/rollup/dist/native.js'
+  ]
+}
+
+Node.js v18.19.0
+Error: Process completed with exit code 1.
+```
 # React + Vite
 ```
 name: Deploy

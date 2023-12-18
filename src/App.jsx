@@ -4,7 +4,7 @@ import './App.css';
 import { AnimatePresence } from 'framer-motion';
 import TaskProvider from './components/context/Context';
 import Home from './Home';
-// import CompanyLogo from './components/header/CompanyLogo';
+import CompanyLogo from './components/header/CompanyLogo';
 import Contact from './components/contact/Contact';
 import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
@@ -18,8 +18,8 @@ function App() {
       <AnimatePresence>
         <Router>
           <StyledEngineProvider injectFirst>
-            {/* <CompanyLogo />
-            <Navbar /> */}
+            <CompanyLogo />
+            {/* <Navbar /> */}
             <Routes>
               <Route path='/' exact Component={Home} />
               <Route path='/contact' exact Component={Contact} />

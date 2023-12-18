@@ -91,6 +91,29 @@ jobs:
   {
     "name": "International Agricultural Event 2023",
     "imgs": [
+      "images/67img.jpg",
+      "images/66img.jpg",
+      "images/66img.jpg"
+    ]
+  },
+  {
+    "name": "Convensional Agricultural Event 2024",
+    "imgs": [
+      "images/66img.jpg",
+      "images/66img.jpg",
+      "images/66img.jpg"
+    ]
+  }
+]
+```
+
+<!-- 2nd formate -->
+
+```
+[
+  {
+    "name": "International Agricultural Event 2023",
+    "imgs": [
       "https://drive.google.com/thumbnail?id=1etSBlQX4k9D_HCRScTwL3ewKJ_Jh6i8c",
       "https://drive.google.com/thumbnail?id=1ZyU0oQo0xGr-KqNT8wVH-LmLMOAFsSdY",
       "https://drive.google.com/thumbnail?id=1KUzgWOOtWbJaalZF1sKM-vh3dPtjwUYg",

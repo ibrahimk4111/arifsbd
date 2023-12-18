@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 
 const Partners = () => {
   const { partnerData } = useContext(UserContext)
+  console.log( partnerData )
+  
   return (
     <div className=''>
       <Container className=' md:py-10 py-5 '>

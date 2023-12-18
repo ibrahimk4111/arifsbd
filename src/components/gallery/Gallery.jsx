@@ -6,7 +6,7 @@ import { Event, EventOutlined, FormatQuoteTwoTone, ImageAspectRatio, Imagesearch
 
 const Gallery = () => {
     const { galleryData } = useContext(UserContext)
-
+    console.log( galleryData )
     return (
         <div className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed '>
             <Container id='gallery' className='md:py-10 py-5'>
@@ -37,7 +37,7 @@ const Gallery = () => {
                                         <AccordionDetails className=' grid lg:grid-cols-3 grid-cols-1 gap-3 overflow-y-auto max-h-[70vh]'>
                                             {event.imgs && (event.imgs).map((img, index) => (
                                                 <div key={index} className=' overflow-hidden relative w-full '>
-                                                    <img src={`/arifsbd/${img}`} alt=".." className=' object-cover rounded-md w-full' />
+                                                    <img src={`${img}`} alt=".." className=' object-cover rounded-md w-full' />
                                                     <div className=' absolute top-0 left-0 w-full h-full flex justify-center items-end '>
                                                         <div className='w-full bg-gradient-to-t from-black rounded-b-md p-2 text-white '>
                                                             <h1 className=' w-full text-end'>{index + 1}</h1>

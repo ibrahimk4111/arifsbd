@@ -1,4 +1,5 @@
-# ERROR 
+# ERROR
+
 ```
 node:internal/modules/cjs/loader:1134
   const err = new Error(message);
@@ -26,7 +27,9 @@ Require stack:
 Node.js v18.19.0
 Error: Process completed with exit code 1.
 ```
+
 # React + Vite
+
 ```
 # Simple workflow for deploying static content to GitHub Pages
 name: deploy
@@ -82,6 +85,7 @@ jobs:
 ```
 
 <!-- gallery data from drive -->
+
 ```
 [
   {
@@ -126,10 +130,63 @@ jobs:
 ```
 
 <!-- parterns db data -->
+
 ```
 [
   {
-    
+    "id":"1",
+    "name": "BREMER PHARMA GMBH, GERMANY",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"2",
+    "name": "AGPACK, LLC, USA",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"3",
+    "name": "FRANK WRIGHT LTD. ENGLAND, UK",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"4",
+    "name": "PERSTORP WASPIK B.V",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"5",
+    "name": "BALCHEM CORPORATION, ITALY",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"6",
+    "name": "SICHUAN LOMON CORPORATION",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"7",
+    "name": "DELACON BIOTECHNIK GMBH, AUSTRIA",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"8",
+    "name": "PERSTORP WASPIK B.V",
+    "img": "images/46logo.jpg"
+  },
+  {
+    "id":"9",
+    "name": "BALCHEM CORPORATION, ITALY",
+    "img": "images/46logo.jpg"
+  }
+]
+```
+
+<!-- 2nd formate -->
+
+```
+[
+  {
+
     "id":"1",
     "name": "BREMER PHARMA GMBH, GERMANY",
     "img": "https://drive.google.com/thumbnail?id=1u2VBcJ2jZMOmJJ-FtwyIEp3Jt4n1W7nI"
@@ -219,6 +276,7 @@ jobs:
 ```
 
 <!-- products db data -->
+
 ```
 [
   {
@@ -259,7 +317,9 @@ jobs:
   }
 ]
 ```
+
 <!-- 2nd formate -->
+
 ```
 [
   {

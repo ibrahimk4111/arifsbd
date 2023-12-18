@@ -51,7 +51,7 @@ const Partners = () => {
               <SwiperSlide key={index} className=' h-auto'>
                 <Link>
                   <div className=' flex justify-center items-center h-20 overflow-hidden border-2 border-slate-200 rounded-lg '>
-                    <img src={`/arifsbd/${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto' />
+                    <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto' />
                   </div>
                   <h1 className=' text-sm mt-2 text-slate-500'>{item.name}</h1>
                 </Link>

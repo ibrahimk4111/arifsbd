@@ -1,6 +1,6 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Navbar from './components/header/Navbar'
+import Navbar from './components/header/Navbar'
 import { AnimatePresence } from 'framer-motion';
 import TaskProvider from './components/context/Context';
 import Home from './Home';
@@ -19,7 +19,7 @@ function App() {
         <Router>
           <StyledEngineProvider injectFirst>
             <CompanyLogo />
-            {/* <Navbar /> */}
+            <Navbar />
             <Routes>
               <Route path='/' exact Component={Home} />
               <Route path='/contact' exact Component={Contact} />

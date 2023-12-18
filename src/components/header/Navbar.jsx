@@ -1,13 +1,11 @@
-import React, { useContext, useState } from "react";
-import { UserContext } from "../context/Context";
+import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { Notifications, KeyboardArrowDown, MenuRounded, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, ChildFriendlyRounded, PeopleAltRounded } from "@mui/icons-material";
+import { Notifications, KeyboardArrowDown, MenuRounded, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, PeopleAltRounded } from "@mui/icons-material";
 import { Box, IconButton, Typography, Badge, MenuItem, Container } from "@mui/material";
 import TemporaryDrawer from "./Drawer";
 
 
 const Navbar = () => {
-    const [stickyNav, setStickyNav] = useState(false)
 
     return (
         <div className=" mb-2 z-50 ">
@@ -21,6 +19,7 @@ const Navbar = () => {
                             </IconButton>
                         </TemporaryDrawer>
                     </Box>
+                    
                     {/* main navbar */}
                     <Box className="lg:flex hidden">
                         <Link to='/' >
@@ -30,7 +29,7 @@ const Navbar = () => {
                             </MenuItem>
                         </Link>
 
-                        <Link className="z-50 group relative">
+                        <Box className="z-50 group relative">
                             <MenuItem
                                 className=" hover:bg-theme text-white hover:text-black rounded-lg overflow-hidden flex gap-1 "
                             >
@@ -49,7 +48,7 @@ const Navbar = () => {
                                     ))
                                 }
                             </Typography>
-                        </Link>
+                        </Box>
 
                         <Link>
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
@@ -65,7 +64,7 @@ const Navbar = () => {
                             </MenuItem>
                         </Link>
 
-                        <Link className="z-50 group relative">
+                        <Box className="z-50 group relative">
                             <MenuItem
                                 className=" hover:bg-theme text-white hover:text-black transition duration-300 ease-in rounded-lg overflow-hidden flex gap-1"
                             >
@@ -84,7 +83,8 @@ const Navbar = () => {
                                     ))
                                 }
                             </Typography>
-                        </Link>
+                        </Box>
+
                         <Link to="/gallery">
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                                 <Image className=" text-lg " />
@@ -98,6 +98,7 @@ const Navbar = () => {
                             </MenuItem>
                         </Link>
                     </Box>
+                    
                     {/* <Box sx={{ flexGrow: 1 }} /> */}
                     <Box>
                         <IconButton size="large" className=" hover:text-black transition duration-300 ease-in text-white animate-bounce">

@@ -25,7 +25,7 @@ export default function CompanyLogo() {
       </div>
 
       {/* top nav right */}
-      <div className=" group relative">
+      <div className=" group relative ">
         <MenuItem
           onClick={()=>setIsOpen(!isOpen)}
           className=" hover:bg-theme text-black hover:text-white rounded-lg overflow-hidden flex gap-1 px-1 "
@@ -34,7 +34,7 @@ export default function CompanyLogo() {
           <KeyboardArrowDown />
         </MenuItem>
         <Typography
-          className={`lg:hidden lg:group-hover:block absolute right-0 bg-bodyColor shadow-lg rounded-lg z-10 ${isOpen ? "block": "hidden"}`}
+          className={`z-50 lg:hidden lg:group-hover:block absolute right-0 bg-bodyColor shadow-lg rounded-lg ${isOpen ? "block": "hidden"}`}
         >
           {
             sisterConcerns.map((item, index) => (

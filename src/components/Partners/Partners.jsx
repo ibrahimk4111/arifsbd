@@ -12,8 +12,8 @@ const Partners = () => {
   // console.log( partnerData )
 
   return (
-    <div className=''>
-      <Container className=' md:py-10 py-5 '>
+    <div id='partners' className='py-5'>
+      <Container >
         <div className='relative w-full'>
           <h1 className='uppercase font-semibold text-2xl text-slate-400'> Our Partners </h1>
         </div>

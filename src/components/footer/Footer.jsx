@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
 
-    <div className='bg-gradient-to-tl from-slate-900 to-[#04483e] '>
+    <div id='contact' className='bg-gradient-to-tl from-slate-900 to-[#04483e] '>
       <Container className=' grid grid-cols-1 gap-3 text-white p-4 w-full h-auto'>
         <div className=' flex justify-center items-center mb-5'>
           <h1 className=' text-2xl font-semibold uppercase '><span className=' text-theme  underline underline-offset-8'>Contact</span> Us</h1>

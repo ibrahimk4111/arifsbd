@@ -41,6 +41,7 @@ const TaskProvider = ({ children }) => {
   const [productData, setProductData] = useState([]);
   const [partnerData, setpartnerData] = useState([]);
   const [galleryData, setgalleryData] = useState([]);
+  const [productNavItem, setProductNavItem] = useState([]);
   useEffect(() => {
     const fetchedData = async (url, setState) => {
       const response = await fetch(url)
@@ -51,6 +52,7 @@ const TaskProvider = ({ children }) => {
     fetchedData('./localDBevents.json', setgalleryData)
     fetchedData('./localDBpartners.json', setpartnerData)
     fetchedData('./localDBproducts.json', setProductData)
+    fetchedData('./localProductNavItem.json', setProductNavItem)
   }, []);
 
   const [shopingCard, setShopingCard] = useState([]);
@@ -75,6 +77,7 @@ const TaskProvider = ({ children }) => {
         hello,
         variants,
         productData,
+        productNavItem,
         galleryData,
         partnerData,
         shopingCard,

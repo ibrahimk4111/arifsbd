@@ -8,7 +8,7 @@ import CompanyLogo from './components/header/CompanyLogo';
 import Contact from './components/contact/Contact';
 import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
-// import TopButton from './components/TopButton';
+import TopButton from './components/TopButton';
 import { StyledEngineProvider } from '@mui/material';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
               <Route path='/contact' exact Component={Contact} />
               <Route path='/gallery' exact Component={Gallery} />
             </Routes>
-            {/* <TopButton /> */}
+            <TopButton />
             <Footer />
           </StyledEngineProvider>
         </Router>

@@ -3,6 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Notifications, KeyboardArrowDown, MenuRounded, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, PeopleAltRounded } from "@mui/icons-material";
 import { Box, IconButton, Typography, Badge, MenuItem, Container } from "@mui/material";
 import TemporaryDrawer from "./Drawer";
+import ProductNavBar from "../products/ProductNavBar";
 
 
 const Navbar = () => {
@@ -30,27 +31,10 @@ const Navbar = () => {
                         </Link>
 
                         <Box className="z-50 group relative">
-                            <MenuItem
-                                className=" hover:bg-theme text-white hover:text-black rounded-lg overflow-hidden flex gap-1 "
-                            >
-                                <ShoppingCart className=" text-lg " />
-                                <Typography className=" text-sm font-semibold ">Products</Typography>
-                                <KeyboardArrowDown />
-                            </MenuItem>
-                            <Typography
-                                className=" hidden group-hover:block absolute top-9 bg-slate-100 shadow-lg rounded-lg z-10"
-                            >
-                                {
-                                    (["Profile", "Company Honor", "Members"]).map((item) => (
-                                        <Link key={item} className="transition-all duration-300">
-                                            <MenuItem className=" hover:bg-theme hover:text-white transition duration-300 ease-in text-black rounded-lg text-sm font-semibold" >{item}</MenuItem>
-                                        </Link>
-                                    ))
-                                }
-                            </Typography>
+                            <ProductNavBar />
                         </Box>
 
-                        <Link>
+                        <Link smooth to="#partners">
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                                 <PeopleAltRounded className=" text-lg " />
                                 <Typography className=" text-sm font-semibold ">Partners</Typography>
@@ -78,20 +62,20 @@ const Navbar = () => {
                                 {
                                     (["Profile", "Company Honor", "Members"]).map((item) => (
                                         <Link key={item}>
-                                            <MenuItem className=" hover:bg-theme hover:text-white transition duration-300 ease-in text-black rounded-lg text-sm font-semibold">{item}</MenuItem>
+                                            <MenuItem className="h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm">{item}</MenuItem>
                                         </Link>
                                     ))
                                 }
                             </Typography>
                         </Box>
 
-                        <Link to="/gallery">
+                        <Link smooth to="#gallery">
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                                 <Image className=" text-lg " />
                                 <Typography className=" text-sm font-semibold ">Gallery</Typography>
                             </MenuItem>
                         </Link>
-                        <Link>
+                        <Link smooth to="#contact">
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                                 <ContactSupport className=" text-lg " />
                                 <Typography className=" text-sm font-semibold ">Contact</Typography>

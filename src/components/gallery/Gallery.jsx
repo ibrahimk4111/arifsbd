@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../context/Context'
 import { Box, CircularProgress, Container, Accordion, AccordionSummary, AccordionDetails, IconButton, Typography } from '@mui/material'
-import { Event, EventOutlined, FormatQuoteTwoTone, ImageAspectRatio, ImagesearchRoller, KeyboardArrowDown, ListAlt, ListAltRounded } from '@mui/icons-material'
+import { Event, EventOutlined, FormatQuoteOutlined, FormatQuoteRounded, FormatQuoteTwoTone, ImageAspectRatio, ImagesearchRoller, KeyboardArrowDown, ListAlt, ListAltRounded } from '@mui/icons-material'
 
 
 const Gallery = () => {
@@ -9,11 +9,11 @@ const Gallery = () => {
     // console.log( galleryData )
     
     return (
-        <div className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed '>
-            <Container id='gallery' className='md:py-10 py-5'>
+        <div id='gallery' className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed py-10 my-5'>
+            <Container >
                 <div className='flex flex-col justify-center items-center'>
                     <div className='relative w-full'>
-                        <FormatQuoteTwoTone className='absolute md:-top-5 -top-3 left-0 text-[#00cba9] opacity-30 md:text-6xl text-2xl rotate-180 blur-[2px]' />
+                        <FormatQuoteOutlined className='absolute md:-top-5 -top-3 left-0 text-white md:text-6xl text-2xl rotate-180 blur-sm' />
                         <h1 className='md:ml-20 ml-5 uppercase font-semibold text-2xl text-white'> Event Images </h1>
                     </div>
                     <hr className=' h-[1px] bg-slate-300 my-2 rounded-full w-full' />

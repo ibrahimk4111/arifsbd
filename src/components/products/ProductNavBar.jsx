@@ -4,10 +4,10 @@ import React, { useContext } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import { UserContext } from '../context/Context'
 
+
+// component for navigation bar
 const ProductNavBar = () => {
-
     const { productNavItem } = useContext(UserContext)
-
     return (
         <div>
             <MenuItem
@@ -32,6 +32,8 @@ const ProductNavBar = () => {
     )
 }
 
+
+// component for drawer
 const ProductDrawerBar = ({toggleDrawer}) => {
     const { productNavItem } = useContext(UserContext)
     return (

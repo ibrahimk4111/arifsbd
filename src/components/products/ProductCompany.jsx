@@ -21,7 +21,7 @@ const ProductCompany = () => {
                             {
                                 (item.products).map((item, index) => (
                                     <div key={index} className=' p-5 '>
-                                        <h2 className=' font-bold text-theme '>{item.name}</h2>
+                                        <h2 className=' font-bold text-theme lg:text-xl text-base'>{item.name}</h2>
                                         <hr className=' h-1 mb-3'/>
                                         <p className=' text-justify '>{item.description}</p>
                                     </div>

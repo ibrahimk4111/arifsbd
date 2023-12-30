@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Notifications, KeyboardArrowDown, MenuRounded, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, PeopleAltRounded } from "@mui/icons-material";
 import { Box, IconButton, Typography, Badge, MenuItem, Container } from "@mui/material";
 import TemporaryDrawer from "./Drawer";
-import ProductNavBar from "../products/ProductNavBar";
+import {ProductNavBar} from "../products/ProductNavBar";
 
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
                         </Link>
 
                         <Box className="z-50 group relative">
-                            <ProductNavBar />
+                            <ProductNavBar/>
                         </Box>
 
                         <Link smooth to="#partners">
@@ -62,14 +62,14 @@ const Navbar = () => {
                                 {
                                     (["Profile", "Company Honor", "Members"]).map((item) => (
                                         <Link key={item}>
-                                            <MenuItem className="h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm">{item}</MenuItem>
+                                            <MenuItem className=" h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm " >{item}</MenuItem>
                                         </Link>
                                     ))
                                 }
                             </Typography>
                         </Box>
 
-                        <Link smooth to="#gallery">
+                        <Link smooth to="/#gallery">
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                                 <Image className=" text-lg " />
                                 <Typography className=" text-sm font-semibold ">Gallery</Typography>

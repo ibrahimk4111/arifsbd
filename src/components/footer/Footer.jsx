@@ -13,7 +13,7 @@ const Footer = () => {
           <h1 className=' text-2xl font-semibold uppercase '><span className=' underline underline-offset-8'>Contact</span> Us</h1>
         </div>
 
-        <section className='grid md:grid-cols-12 gap-5 grid-cols-1 h-auto'>
+        <section className='grid lg:grid-cols-12 gap-5 grid-cols-1 h-auto'>
 
           {/* address grid  */}
           <div className='flex flex-col gap-5 md:col-span-4'>
@@ -37,9 +37,9 @@ const Footer = () => {
           </div>
 
           {/* map grid */}
-          <div className=' md:col-span-4 flex justify-center items-end'>
+          <div className=' lg:col-span-4 flex justify-center items-end'>
             <iframe
-              className=" rounded-lg w-full md:h-full h-52"
+              className=" rounded-lg w-full min-h-full h-52"
               title="Arifs (Bangladesh) Ltd"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.26936669020685!2d90.40802717220028!3d23.736327095054584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f48430033f%3A0x73683be2a43b3c1b!2sPioneer%20Law%20Associates!5e0!3m2!1sen!2sbd!4v1689211247540!5m2!1sen!2sbd"
               allowFullScreen=""

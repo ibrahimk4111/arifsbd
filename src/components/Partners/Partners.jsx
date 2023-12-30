@@ -25,7 +25,7 @@ const Partners = () => {
           autoplay={{
             delay: 1000,
             reverseDirection: true,
-            disableOnInteraction:false,
+            disableOnInteraction: false
           }}
           breakpoints={{
             0: {

@@ -7,14 +7,17 @@ import { Event, EventOutlined, FormatQuoteOutlined, FormatQuoteRounded, FormatQu
 const Gallery = () => {
     const { galleryData } = useContext(UserContext)
     // console.log( galleryData )
-    
+
     return (
         <div id='gallery' className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed py-10 my-5'>
             <Container >
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='relative w-full'>
-                        <FormatQuoteOutlined className='absolute md:-top-5 -top-3 left-0 text-white md:text-6xl text-2xl rotate-180 blur-sm' />
-                        <h1 className='md:ml-20 ml-5 uppercase font-semibold text-2xl text-white'> Event Images </h1>
+                <div className='flex flex-col'>
+                    <div className=' flex justify-between items-center '>
+                        <div className='relative w-full'>
+                            <FormatQuoteOutlined className='absolute md:-top-5 -top-3 left-0 text-white md:text-6xl text-2xl rotate-180 blur-sm' />
+                            <h1 className='md:ml-20 ml-5 uppercase font-semibold text-2xl text-white'> Event Images </h1>
+                        </div>
+                        <button className=' text-white w-24 hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see more </button>
                     </div>
                     <hr className=' h-[1px] bg-slate-300 my-2 rounded-full w-full' />
                     <h1 className=' w-[80%] text-justify py-5 text-white'>Every year we arrange and participate several international functions and events to develop agricultural growth of Bangladesh. </h1>
@@ -26,7 +29,7 @@ const Gallery = () => {
                             {
                                 galleryData.map((event, index) => (
                                     <Accordion key={index} >
-                                        <AccordionSummary className=' bg-[#415f5f] flex justify-center items-center ' expandIcon={<KeyboardArrowDown className=' text-white '/>}>
+                                        <AccordionSummary className=' bg-[#415f5f] flex justify-center items-center ' expandIcon={<KeyboardArrowDown className=' text-white ' />}>
                                             <IconButton>
                                                 <ListAltRounded className='text-white' />
                                             </IconButton>

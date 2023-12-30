@@ -10,6 +10,7 @@ import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
 import TopButton from './components/TopButton';
 import { StyledEngineProvider } from '@mui/material';
+import ProductCompany from './components/products/ProductCompany';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path='/' exact Component={Home} />
               <Route path='/contact' exact Component={Contact} />
               <Route path='/gallery' exact Component={Gallery} />
+              <Route path='/products_company/:name' exact Component={ProductCompany} />
             </Routes>
             <TopButton />
             <Footer />

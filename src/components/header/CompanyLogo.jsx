@@ -21,7 +21,7 @@ export default function CompanyLogo() {
       {/* top nav left */}
       <div className=' flex items-center overflow-hidden col-span-2'>
         <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-20 ' />
-        <h1 className=' md:text-2xl text-base font-bold'> <span className=' text-theme '>(Bangladesh)</span> Limited</h1>
+        <h1 className=' md:text-2xl text-base font-bold'> (Bangladesh) Limited</h1>
       </div>
 
       {/* top nav right */}

@@ -10,7 +10,7 @@ const Footer = () => {
     <div id='contact' className='bg-gradient-to-tl from-slate-900 to-[#04483e] '>
       <Container className=' grid grid-cols-1 gap-3 text-white p-4 w-full h-auto'>
         <div className=' flex justify-center items-center mb-5'>
-          <h1 className=' text-2xl font-semibold uppercase '><span className=' text-theme  underline underline-offset-8'>Contact</span> Us</h1>
+          <h1 className=' text-2xl font-semibold uppercase '><span className=' underline underline-offset-8'>Contact</span> Us</h1>
         </div>
 
         <section className='grid md:grid-cols-12 gap-5 grid-cols-1 h-auto'>
@@ -78,7 +78,7 @@ const Footer = () => {
         {/* copyright section */}
         <section className='flex flex-wrap justify-end items-center text-xs gap-1 md:mt-5 mt-3'>
           <h1>© Copyright 2023, Arifs (BD) LTD. All rights Reserved; </h1>
-          <Link to="https://github.com/ibrahimk4111" className=' flex items-center gap-2 px-2'> Developer: <GitHub className=' text-lg' /></Link>
+          <Link to="https://github.com/ibrahimk4111" className=' flex items-center gap-2 px-2' target='_blank'> Developed by : <GitHub className=' text-lg' /></Link>
         </section>
       </Container>
     </div>

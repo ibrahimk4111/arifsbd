@@ -22,7 +22,7 @@ const ProductNavBar = () => {
             >
                 {
                     productNavItem && productNavItem.map((item, index) => (
-                        <HashLink key={index} className="transition-all duration-300">
+                        <HashLink to={`/products_company/${item.company_name}`} key={index} className="transition-all duration-300">
                             <MenuItem className=" h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm " >{item.company_name}</MenuItem>
                         </HashLink>
                     ))

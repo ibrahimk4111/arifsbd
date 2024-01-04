@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div className=" mb-2 z-50 ">
             <div className=" bg-theme text-white shadow top-0 w-full shadow-slate-700" >
-                <Container className=" flex justify-between items-center">
+                <Container className=" flex justify-between items-center ">
                     {/* toggle icon */}
                     <Box className=" lg:hidden block">
                         <TemporaryDrawer>
@@ -22,7 +22,7 @@ const Navbar = () => {
                     </Box>
                     
                     {/* main navbar */}
-                    <Box className="lg:flex hidden">
+                    <Box className="lg:flex hidden ">
                         <Link to='/' >
                             <MenuItem className=" hover:bg-theme text-white hover:text-black transition duration-300 ease-in flex justify-center items-center gap-2 rounded-lg">
                                 <House className=" text-lg " />
@@ -56,17 +56,17 @@ const Navbar = () => {
                                 <Typography className=" text-sm font-semibold ">About</Typography>
                                 <KeyboardArrowDown />
                             </MenuItem>
-                            <Typography
-                                className=" hidden group-hover:block absolute top-9 bg-slate-100 shadow-lg rounded-lg "
+                            <Box
+                                className=" hidden group-hover:flex flex-col divide-y-2 divide-white bg-slate-100 shadow-lg rounded-lg z-10 absolute top-9 "
                             >
                                 {
                                     ([{"name":"Profile", "route":"profile"}, {"name":"Company Honor", "route":"achievement"}, {"name":"Members", "route":"employee"}]).map((item) => (
-                                        <Link to={`/about/${item.route}`} key={item}>
-                                            <MenuItem className=" h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm " >{item.name}</MenuItem>
+                                        <Link to={`/about/${item.route}`} key={item} >
+                                            <MenuItem className="h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm" >{item.name}</MenuItem>
                                         </Link>
                                     ))
                                 }
-                            </Typography>
+                            </Box>
                         </Box>
 
                         <Link smooth to="/#gallery">

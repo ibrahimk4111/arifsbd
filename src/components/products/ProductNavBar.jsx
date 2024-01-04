@@ -17,8 +17,8 @@ const ProductNavBar = () => {
                 <Typography className=" text-sm font-semibold ">Products</Typography>
                 <KeyboardArrowDown />
             </MenuItem>
-            <Typography
-                className=" hidden group-hover:block absolute top-9 bg-slate-100 shadow-lg rounded-lg z-10"
+            <Box
+                className=" hidden group-hover:flex flex-col divide-y-2 divide-white absolute top-9 bg-slate-100 shadow-lg rounded-lg z-10"
             >
                 {
                     productNavItem && productNavItem.map((item, index) => (
@@ -27,7 +27,7 @@ const ProductNavBar = () => {
                         </Link>
                     ))
                 }
-            </Typography>
+            </Box>
         </div>
     )
 }

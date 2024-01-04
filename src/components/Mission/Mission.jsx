@@ -9,8 +9,8 @@ const Mission = () => {
                 <div className='grid grid-cols-12' >
                     <div className=' lg:col-span-9 col-span-12 grid grid-cols-1 gap-3 ' >
                         <section className=' shadow shadow-slate-400 p-5 z-50 bg-slate-50 bg-opacity-80 rounded-md '>
-                            <h2 className=' text-xl text-theme font-bold'>Our Vission</h2>
-                            <hr className=' h-1 mb-5' />
+                            <h2 className=' text-xl text-theme font-semibold'>Our Vission</h2>
+                            <hr className=' h-1 mb-5 border-slate-400 mt-2' />
                             <div className=' flex flex-col gap-2 text-sm tracking-wide text-justify'>
                                 <p>Our Mission is to bring animal healthcare & nutritional product must be of international standards within the reach of every poultry & livestock farmers.</p>
                                 <p>We are always ready to assist our livestock sector with the widest range of solution from disease control to quality nutrition with a track recode of over 34 years.</p>
@@ -21,7 +21,7 @@ const Mission = () => {
                         </section>
                         <section className=' shadow shadow-slate-300 p-3 z-50 bg-slate-50 bg-opacity-80 rounded-md '>
                             <h2 className=' text-xl text-theme font-bold'>Our Purpose</h2>
-                            <hr className=' h-1 mb-5' />
+                            <hr className=' h-1 mb-5 border-slate-400 mt-2' />
                             <div className=' flex flex-col gap-2 text-sm tracking-wide text-justify'>
                                 <p>To produce high quality chicks and feed so that poultry farmers can be productive and prosperous.</p>
                                 <p>To produce safe eggs and chicken which consumers can eat with confidence.</p>

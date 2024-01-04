@@ -34,7 +34,7 @@ export default function CompanyLogo() {
           <KeyboardArrowDown />
         </MenuItem>
         <Typography
-          className={`z-50 lg:hidden lg:group-hover:block absolute right-0 bg-bodyColor shadow-lg rounded-lg ${isOpen ? "block": "hidden"}`}
+          className={`z-[1000] scale-0 lg:group-hover:scale-100 flex flex-col transition duration-300 divide-y-2 divide-white absolute right-0 bg-slate-100 shadow-lg rounded-lg ${isOpen ? "scale-100": "scale-0"}`}
         >
           {
             sisterConcerns.map((item, index) => (

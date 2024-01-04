@@ -10,6 +10,9 @@ export default {
         "theme":"#00cba9",
         "hoveredColor": "#ecfffc",
         "bodyColor": "#f4ffff"
+      },
+      transitionProperty: {
+        'height': 'height'
       }
     },
   },

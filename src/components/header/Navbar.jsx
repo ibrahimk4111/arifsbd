@@ -3,7 +3,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Notifications, KeyboardArrowDown, MenuRounded, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, PeopleAltRounded } from "@mui/icons-material";
 import { Box, IconButton, Typography, Badge, MenuItem, Container } from "@mui/material";
 import TemporaryDrawer from "./Drawer";
-import {ProductNavBar} from "../products/ProductNavBar";
+import { ProductNavBar } from "../products/ProductNavBar";
+import NotificationDrawer from "./NotificationDrawer";
 
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
                             </IconButton>
                         </TemporaryDrawer>
                     </Box>
-                    
+
                     {/* main navbar */}
                     <Box className="lg:flex hidden ">
                         <Link to='/' >
@@ -31,7 +32,7 @@ const Navbar = () => {
                         </Link>
 
                         <Box className="z-[1000] group relative">
-                            <ProductNavBar/>
+                            <ProductNavBar />
                         </Box>
 
                         <Link smooth to="#partners">
@@ -57,11 +58,11 @@ const Navbar = () => {
                                 <KeyboardArrowDown />
                             </MenuItem>
                             <Box
-                                className=" hidden group-hover:flex flex-col divide-y-2 divide-white bg-slate-100 shadow-lg rounded-lg z-10 absolute top-9 "
+                                className=" scale-0 group-hover:scale-100 flex flex-col transition duration-300 divide-y-2 divide-white bg-slate-100 shadow-lg rounded-lg z-10 absolute top-9"
                             >
                                 {
-                                    ([{"name":"Profile", "route":"profile"}, {"name":"Company Honor", "route":"achievement"}, {"name":"Members", "route":"employee"}]).map((item) => (
-                                        <Link to={`/about/${item.route}`} key={item} >
+                                    ([{ "name": "Profile", "route": "profile" }, { "name": "Company Honor", "route": "achievement" }, { "name": "Members", "route": "employee" }]).map((item, index) => (
+                                        <Link to={`/about/${item.route}`} key={index} >
                                             <MenuItem className="h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm" >{item.name}</MenuItem>
                                         </Link>
                                     ))
@@ -82,14 +83,16 @@ const Navbar = () => {
                             </MenuItem>
                         </Link>
                     </Box>
-                    
+
                     {/* <Box sx={{ flexGrow: 1 }} /> */}
                     <Box>
-                        <IconButton size="large" className=" hover:text-black transition duration-300 ease-in text-white animate-bounce">
-                            <Badge badgeContent="" variant="dot" color="info">
-                                <Notifications />
-                            </Badge>
-                        </IconButton>
+                        <NotificationDrawer>
+                            <IconButton size="large" className=" hover:text-black transition duration-300 ease-in text-white animate-bounce">
+                                <Badge badgeContent="" variant="dot" color="info">
+                                    <Notifications />
+                                </Badge>
+                            </IconButton>
+                        </NotificationDrawer>
                     </Box>
 
                 </Container>

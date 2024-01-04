@@ -8,7 +8,7 @@ const Mission = () => {
             <Container >
                 <div className='grid grid-cols-12' >
                     <div className=' lg:col-span-9 col-span-12 grid grid-cols-1 gap-3 ' >
-                        <section className=' shadow shadow-slate-400 p-5 z-50 bg-slate-50 bg-opacity-80 rounded-md '>
+                        <section className=' shadow shadow-slate-400 p-5 z-50 bg-white bg-opacity-90 rounded-md '>
                             <h2 className=' text-xl text-theme font-semibold'>Our Vission</h2>
                             <hr className=' h-1 mb-5 border-slate-400 mt-2' />
                             <div className=' flex flex-col gap-2 text-sm tracking-wide text-justify'>
@@ -19,7 +19,7 @@ const Mission = () => {
                                 <p>Our vision is to be recognized Arifs as a leader in animal health care product, valued by farmers, veterinarians, nutritionist, distributor, retailer, respected by the animal health care community, sought after as an employer and admired by our competitors.</p>
                             </div>
                         </section>
-                        <section className=' shadow shadow-slate-300 p-3 z-50 bg-slate-50 bg-opacity-80 rounded-md '>
+                        <section className=' shadow shadow-slate-300 p-3 z-50 bg-slate-50 bg-opacity-90 rounded-md '>
                             <h2 className=' text-xl text-theme font-bold'>Our Purpose</h2>
                             <hr className=' h-1 mb-5 border-slate-400 mt-2' />
                             <div className=' flex flex-col gap-2 text-sm tracking-wide text-justify'>

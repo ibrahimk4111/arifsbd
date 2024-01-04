@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { HashLink as Link } from "react-router-hash-link";
-import { PriorityHigh, KeyboardArrowDown, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, CropSquare, CloseRounded } from "@mui/icons-material";
-import { Box, IconButton, Typography, Button, Menu, MenuItem, Drawer, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { PriorityHigh, KeyboardArrowDown, ContactSupport, House, AccessTimeFilled, Image, CloseRounded } from "@mui/icons-material";
+import { Box, Typography, MenuItem, Drawer, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import { ProductDrawerBar } from '../products/ProductNavBar';
 
 export default function TemporaryDrawer({ children }) {

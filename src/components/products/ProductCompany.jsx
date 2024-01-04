@@ -16,7 +16,7 @@ const ProductCompany = () => {
                         item.company_name === name &&
                         <div key={index} className='py-5'>
                             <h2 className=' lg:text-3xl text-xl font-bold uppercase '>{item.company_name}</h2>
-                            <HashLink to={`http://${item.website}`} target='_blank'> <h4 className=' text-theme py-3'> <LanguageRounded /> <span className=' ml-2 font-semibold'>Website :</span> {item.website}</h4> </HashLink>
+                            <h4 className=' text-theme py-3'> <HashLink  to={`http://${item.website}`} target='_blank' > <LanguageRounded /> <span className=' ml-2 font-semibold'>Website :</span> {item.website} </HashLink> </h4>
                             <h4 > <span className=' font-semibold'>Product Category :</span> {item.product_category}</h4>
                             {
                                 (item.products).map((item, index) => (

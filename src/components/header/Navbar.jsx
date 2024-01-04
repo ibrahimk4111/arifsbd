@@ -30,7 +30,7 @@ const Navbar = () => {
                             </MenuItem>
                         </Link>
 
-                        <Box className="z-50 group relative">
+                        <Box className="z-[1000] group relative">
                             <ProductNavBar/>
                         </Box>
 
@@ -41,14 +41,14 @@ const Navbar = () => {
                             </MenuItem>
                         </Link>
 
-                        <Link>
+                        <Link to="/mission">
                             <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                                 <AccessTimeFilled className=" text-lg " />
                                 <Typography className=" text-sm font-semibold ">Mission & Vission</Typography>
                             </MenuItem>
                         </Link>
 
-                        <Box className="z-50 group relative">
+                        <Box className="z-[1000] group relative">
                             <MenuItem
                                 className=" hover:bg-theme text-white hover:text-black transition duration-300 ease-in rounded-lg overflow-hidden flex gap-1"
                             >
@@ -57,12 +57,12 @@ const Navbar = () => {
                                 <KeyboardArrowDown />
                             </MenuItem>
                             <Typography
-                                className=" hidden group-hover:block absolute top-9 bg-slate-100 shadow-lg rounded-lg z-10"
+                                className=" hidden group-hover:block absolute top-9 bg-slate-100 shadow-lg rounded-lg "
                             >
                                 {
-                                    (["Profile", "Company Honor", "Members"]).map((item) => (
-                                        <Link key={item}>
-                                            <MenuItem className=" h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm " >{item}</MenuItem>
+                                    ([{"name":"Profile", "route":"profile"}, {"name":"Company Honor", "route":"achievement"}, {"name":"Members", "route":"employee"}]).map((item) => (
+                                        <Link to={`/about/${item.route}`} key={item}>
+                                            <MenuItem className=" h-10 hover:bg-theme hover:text-white transition duration-300 ease-in text-black text-sm " >{item.name}</MenuItem>
                                         </Link>
                                     ))
                                 }

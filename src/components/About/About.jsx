@@ -22,7 +22,7 @@ const About = () => {
                         <p>Arifs (Bangladesh) Limited is a young, dynamic company born in 1989 and is now a leading Distributor of Veterinary medicines, vaccines, Livestock nutritional products and equipments throughout the country.</p>
                         <p className=' md:block hidden'>One philosophy, that of high yield, has contributed to our continued growth and established our professional reputation, dedication, product selection and technological expertise is reflected in every aspect of Arifs activities. Our philosophy had been and always will be to serve our customers with value and assurance.</p>
                     </div>
-                    <Link>
+                    <Link to="/about/profile">
                         <button style={{ backgroundImage: `url(/arifsbd/images/blob.gif)` }} className=' bg-cover h-20 w-20 text-white mt-5'>Details</button>
                     </Link>
                 </div>

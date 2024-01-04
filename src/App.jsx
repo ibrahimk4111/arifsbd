@@ -11,6 +11,9 @@ import Footer from './components/footer/Footer';
 import TopButton from './components/TopButton';
 import { StyledEngineProvider } from '@mui/material';
 import ProductCompany from './components/products/ProductCompany';
+import CompanyProfile from './components/About/CompanyProfile';
+import Mission from './components/Mission/Mission';
+import CompanyAchievement from './components/About/CompanyAchievement';
 
 function App() {
   return (
@@ -23,6 +26,10 @@ function App() {
             <Navbar />
             <Routes>
               <Route path='/' exact Component={Home} />
+              <Route path='/about/profile' exact Component={CompanyProfile} />
+              <Route path='/about/achievement' exact Component={CompanyAchievement} />
+              <Route path='/about/employee' exact Component={CompanyAchievement} />
+              <Route path='/mission' exact Component={Mission} />
               <Route path='/contact' exact Component={Contact} />
               <Route path='/gallery' exact Component={Gallery} />
               <Route path='/products_company/:name' exact Component={ProductCompany} />

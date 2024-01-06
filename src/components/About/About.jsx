@@ -15,10 +15,10 @@ const About = () => {
 
                 <div className=''>
                     <div className=' flex flex-col justify-center items-start mb-5'>
-                        <h1 className=' text-3xl font-semibold uppercase text-theme  underline underline-offset-8'>About</h1>
+                        <h1 className=' text-xl font-semibold uppercase text-theme  underline underline-offset-8'>About</h1>
                         <div className=' text-base font-semibold uppercase mt-5'>Arifs (Bangladesh) Limited</div>
                     </div>
-                    <div className=' text-justify text-slate-700'>
+                    <div className=' text-sm text-justify text-slate-700  [word-spacing:3px] leading-7'>
                         <p>Arifs (Bangladesh) Limited is a young, dynamic company born in 1989 and is now a leading Distributor of Veterinary medicines, vaccines, Livestock nutritional products and equipments throughout the country.</p>
                         <p className=' md:block hidden'>One philosophy, that of high yield, has contributed to our continued growth and established our professional reputation, dedication, product selection and technological expertise is reflected in every aspect of Arifs activities. Our philosophy had been and always will be to serve our customers with value and assurance.</p>
                     </div>

@@ -16,7 +16,7 @@ const Products = () => {
             <Container>
                 <div>
                     <div className='relative w-full '>
-                        <h1 className='uppercase font-semibold text-2xl text-slate-400'> All Our Products </h1>
+                        <h1 className='uppercase font-semibold text-xl text-slate-400'> All Our Products </h1>
                     </div>
                     <hr className='h-[1px] bg-slate-300 my-2 rounded-full w-full' />
 

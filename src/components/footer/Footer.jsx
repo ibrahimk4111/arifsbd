@@ -7,10 +7,10 @@ const Footer = () => {
 
   return (
 
-    <div id='contact' className='bg-gradient-to-tl from-slate-900 to-[#04483e] '>
+    <div id='contact' className=' bg-gradient-to-bl to-slate-900 from-[#00826c] '>
       <Container className=' grid grid-cols-1 gap-3 text-white p-4 w-full h-auto'>
         <div className=' flex justify-center items-center mb-5'>
-          <h1 className=' text-2xl font-semibold uppercase '><span className=' underline underline-offset-8'>Contact</span> Us</h1>
+          <h1 className=' text-xl font-semibold uppercase '><span className=' underline underline-offset-8'>Contact</span> Us</h1>
         </div>
 
         <section className='grid lg:grid-cols-12 gap-5 grid-cols-1 h-auto'>
@@ -19,7 +19,7 @@ const Footer = () => {
           <div className='flex flex-col gap-5 md:col-span-4'>
             <div className=' flex items-center overflow-hidden'>
               <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover w-28 ' />
-              <h1 className=' text-lg font-bold'> (Bangladesh) Limited</h1>
+              <h1 className=' text-base font-bold'> (Bangladesh) Limited</h1>
             </div>
             <div className='text-sm flex gap-5'>
               <MyLocation className=' bg-theme p-1 rounded-full ' />
@@ -54,7 +54,7 @@ const Footer = () => {
               <h1 className='underline underline-offset-4 md:text-xl text-lg font-medium mb-3'>Navigate to</h1>
               <nav className=' flex flex-col justify-start items-start'>
                 {
-                  (["Home", "Products", "Gallery", "Contact"]).map((item) => (
+                  (["Home", "Products", "Gallery"]).map((item) => (
                     <Link key={item} className=' group flex justify-center items-center gap-3 group py-1 text-sm'> <KeyboardArrowRight className=' text-sm group-hover:translate-x-2 duration-300 transition-all ease-linear' /> {item} </Link>
                   ))
                 }
@@ -63,7 +63,7 @@ const Footer = () => {
 
             {/* important grid */}
             <div className=' col-span-3'>
-              <h1 className='underline underline-offset-4 md:text-xl text-lg font-medium mb-3'>Important Links</h1>
+              <h1 className='underline underline-offset-4 md:text-xl text-lg font-medium mb-3'>Sister Concern</h1>
               <nav className=' flex flex-col justify-start items-start '>
                 {
                   (["AG Noble (Bangladesh) LTD", "Orbit Agrovet Limited"]).map((item) => (

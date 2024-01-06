@@ -15,7 +15,7 @@ const Partners = () => {
     <div id='partners' className='py-5'>
       <Container >
         <div className='relative w-full'>
-          <h1 className='uppercase font-semibold text-2xl text-slate-400'> Our Partners </h1>
+          <h1 className='uppercase font-semibold text-xl text-slate-400'> Our Partners </h1>
         </div>
         <hr className=' h-[1px] bg-slate-300 my-2 rounded-full w-full' />
 
@@ -55,7 +55,7 @@ const Partners = () => {
                   <div className=' flex justify-center items-center h-20 overflow-hidden rounded-md shadow shadow-slate-400 '>
                     <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto' loading='lazy'/>
                   </div>
-                  <h1 className=' text-sm mt-2 text-slate-500'>{item.name}</h1>
+                  <h1 className=' text-xs mt-2 text-slate-500 '>{item.name}</h1>
                 </Link>
               </SwiperSlide>
             ))

@@ -37,7 +37,9 @@ export default function NotificationDrawer({ children }) {
                         </Typography>
                         <CloseRounded className=' rounded-lg ' />
                     </Box>
-                    <div>Drawer for notifications</div>
+                    <div>
+                        <div className="p-5">Drawer for notifications</div>
+                    </div>
                 </div>
 
             </Drawer>

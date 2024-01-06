@@ -22,22 +22,22 @@ const TaskProvider = ({ children }) => {
     },
     hidden: (i) => ({
       opacity: 0,
-      x: i * 50,
+      x: i * 100,
       transition: {
-        duration: i * 0.1
+        duration: i * 0.3
       },
     }),
     visible: (i) => ({
       opacity: 1,
       x: 0,
       transition: {
-        duration: i * 0.5,
-        delay: i * 0.1
+        duration: Math.abs(i) * 0.5,
+        staggerChildren: 0.5,
+        delay: i * 0.1,
       },
     })
   };
 
-  const [sliderData, setsliderData] = useState([]);
   const [productData, setProductData] = useState([]);
   const [partnerData, setpartnerData] = useState([]);
   const [galleryData, setgalleryData] = useState([]);

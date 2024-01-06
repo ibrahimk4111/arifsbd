@@ -14,6 +14,7 @@ import ProductCompany from './components/products/ProductCompany';
 import CompanyProfile from './components/About/CompanyProfile';
 import Mission from './components/Mission/Mission';
 import CompanyAchievement from './components/About/CompanyAchievement';
+import CompanyEmployee from './components/About/CompanyEmployee';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
               <Route path='/' exact Component={Home} />
               <Route path='/about/profile' exact Component={CompanyProfile} />
               <Route path='/about/achievement' exact Component={CompanyAchievement} />
-              <Route path='/about/employee' exact Component={CompanyAchievement} />
+              <Route path='/about/employee' exact Component={CompanyEmployee} />
               <Route path='/mission' exact Component={Mission} />
               <Route path='/contact' exact Component={Contact} />
               <Route path='/gallery' exact Component={Gallery} />

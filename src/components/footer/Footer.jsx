@@ -9,12 +9,9 @@ const Footer = () => {
 
     <div id='contact' className=' bg-gradient-to-bl to-slate-900 from-[#00826c] '>
       <Container className=' grid grid-cols-1 gap-3 text-white p-4 w-full h-auto'>
-        <div className=' flex justify-center items-center mb-5'>
-          <h1 className=' text-xl font-semibold uppercase '><span className=' underline underline-offset-8'>Contact</span> Us</h1>
-        </div>
+        <h1 className=' text-xl font-semibold uppercase mb-5 py-5'><span className=' underline underline-offset-8'>Contact</span> Us</h1>
 
         <section className='grid lg:grid-cols-12 gap-5 grid-cols-1 h-auto'>
-
           {/* address grid  */}
           <div className='flex flex-col gap-5 md:col-span-4'>
             <div className=' flex items-center overflow-hidden'>

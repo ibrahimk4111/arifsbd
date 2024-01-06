@@ -5,7 +5,6 @@ import { AnimatePresence } from 'framer-motion';
 import TaskProvider from './components/context/Context';
 import Home from './Home';
 import CompanyLogo from './components/header/CompanyLogo';
-import Contact from './components/contact/Contact';
 import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
 import TopButton from './components/TopButton';
@@ -31,7 +30,6 @@ function App() {
               <Route path='/about/achievement' exact Component={CompanyAchievement} />
               <Route path='/about/employee' exact Component={CompanyEmployee} />
               <Route path='/mission' exact Component={Mission} />
-              <Route path='/contact' exact Component={Contact} />
               <Route path='/gallery' exact Component={Gallery} />
               <Route path='/products_company/:name' exact Component={ProductCompany} />
             </Routes>

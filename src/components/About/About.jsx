@@ -1,13 +1,14 @@
 import { Container } from '@mui/material'
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import { UserContext } from '../context/Context'
 
 const About = () => {
     const {variants} = useContext(UserContext)
+
     return (
-        <div className=' lg:py-10 py-5 '>
+        <div className='lg:py-10 py-5'>
             <Container className=' grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-5'>
                 <motion.div
                     className=' flex justify-center items-center '
@@ -17,7 +18,7 @@ const About = () => {
                     custom={-2}
                     viewport={{ once: true }}
                 >
-                    <video autoPlay muted loop className='h-auto w-auto max-h-full max-w-full rounded-lg shadow-xl shadow-slate-300 '>
+                    <video autoPlay muted loop className='h-auto w-auto max-h-full max-w-full rounded-lg shadow-lg shadow-slate-300 '>
                         <source src="/arifsbd/images/video.mp4" type="video/mp4" />
                         <h1>video</h1>
                     </video>

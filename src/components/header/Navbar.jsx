@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { Notifications, KeyboardArrowDown, MenuRounded, ShoppingCart, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, PeopleAltRounded } from "@mui/icons-material";
+import { Notifications, KeyboardArrowDown, MenuRounded, ContactSupport, House, AccessTimeFilled, Image, PriorityHigh, PeopleAltRounded } from "@mui/icons-material";
 import { Box, IconButton, Typography, Badge, MenuItem, Container } from "@mui/material";
 import TemporaryDrawer from "./Drawer";
 import { ProductNavBar } from "../products/ProductNavBar";
@@ -8,9 +8,18 @@ import NotificationDrawer from "./NotificationDrawer";
 
 
 const Navbar = () => {
+    const [isVisible, setVisible] = useState(false)
 
+    window.onscroll = () => {
+        if (document.documentElement.scrollTop > 100) {
+            setVisible(true)
+        }
+        else {
+            setVisible(false)
+        }
+    }
     return (
-        <div className=" mb-2 z-50 ">
+        <div className={`mb-2 z-50 w-full ${isVisible?"fixed top-0":""}`}>
             <div className=" bg-theme text-white shadow top-0 w-full shadow-slate-700" >
                 <Container className=" flex justify-between items-center ">
                     {/* toggle icon */}

@@ -16,7 +16,8 @@ const Mission = () => {
                             whileInView="visible"
                             variants={variants}
                             custom={1}
-                            viewport={{ once: true }}
+                            // viewport={{ once: true }}
+                            exit="hidden"
                             className=' shadow shadow-slate-400 p-5 z-50 bg-white rounded-md '
                         >
                             <h2 className=' text-xl text-theme font-semibold'>Our Mission & Vission</h2>
@@ -35,7 +36,7 @@ const Mission = () => {
                             whileInView="visible"
                             variants={variants}
                             custom={2}
-                            viewport={{ once: true }}
+                            // viewport={{ once: true }}
 
                         >
                             <h2 className=' text-xl text-theme font-semibold'>Our Purpose</h2>

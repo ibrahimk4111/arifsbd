@@ -29,7 +29,7 @@ const Products = () => {
                         }}
                         breakpoints={{
                             0: {
-                                spaceBetween: 5,
+                                spaceBetween: 10,
                                 slidesPerView: 3.2
                             },
                             640: {
@@ -46,7 +46,7 @@ const Products = () => {
                             }
                         }}
                         modules={[Autoplay, FreeMode]}
-                        className="py-5 px-2"
+                        className="pt-5 px-2 pb-2"
                     >
                         {
                             productData && productData.map((item, index) => (

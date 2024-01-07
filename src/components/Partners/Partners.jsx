@@ -29,7 +29,7 @@ const Partners = () => {
           }}
           breakpoints={{
             0: {
-              spaceBetween: 5,
+              spaceBetween: 10,
               slidesPerView: 2.2
             },
             640: {
@@ -46,18 +46,19 @@ const Partners = () => {
             }
           }}
           modules={[Autoplay, FreeMode]}
-          className="py-5 px-2"
+          className="pt-5 px-2 pb-2"
         >
           {
             partnerData && partnerData.map((item, index) => (
-              <SwiperSlide key={index} className=' h-auto'>
+              <SwiperSlide key={index} className=' h-auto '>
                 <Link to={item.website} target='_blank'>
-                  <div className=' flex justify-between items-center gap-2 shadow shadow-slate-400 rounded-md'>
-                    <div className=' flex justify-center items-center h-16 overflow-hidden '>
-                      <img src={`${item.img}`} alt={index+1} className=' object-cover w-auto h-auto p-1' loading='lazy' />
+                  <div className=' grid lg:grid-cols-12 grid-cols-1 justify-center items-center gap-2 shadow shadow-slate-400 rounded-md lg:h-full h-auto'>
+                    <div className=' col-span-4 flex justify-center items-center h-16 overflow-hidden '>
+                      <img src={`${item.img}`} alt={index+1} className=' object-cover w-auto h-auto max-h-full p-1' loading='lazy' />
                     </div>
-                    <h1 className='text-xs text-slate-500 p-1'>{item.name}</h1>
+                    <h1 className=' col-span-8 lg:block hidden text-xs text-slate-500 p-1'>{item.name}</h1>
                   </div>
+                  <h1 className='lg:hidden block text-xs text-slate-500 p-1 mt-2'>{item.name}</h1>
                 </Link>
               </SwiperSlide>
             ))

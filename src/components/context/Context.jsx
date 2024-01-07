@@ -22,7 +22,7 @@ const TaskProvider = ({ children }) => {
     },
     hidden: (i) => ({
       opacity: 0,
-      x: i>15? i * 5 : i>5? i * 15 : i * 50,
+      x: i>15? i * 5 : i>5? i * 15 : i * 80,
       transition: {
         duration: i * 0.3
       },

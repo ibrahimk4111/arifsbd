@@ -34,15 +34,15 @@ const Partners = () => {
             },
             640: {
               spaceBetween: 10,
-              slidesPerView: 4.2
+              slidesPerView: 2.2
             },
             768: {
-              spaceBetween: 15,
-              slidesPerView: 5.2
+              spaceBetween: 10,
+              slidesPerView: 3.2
             },
             1024: {
-              spaceBetween: 20,
-              slidesPerView: 6.2
+              spaceBetween: 10,
+              slidesPerView: 4.2
             }
           }}
           modules={[Autoplay, FreeMode]}
@@ -51,11 +51,13 @@ const Partners = () => {
           {
             partnerData && partnerData.map((item, index) => (
               <SwiperSlide key={index} className=' h-auto'>
-                <Link>
-                  <div className=' flex justify-center items-center h-20 overflow-hidden rounded-md shadow shadow-slate-400 '>
-                    <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto' loading='lazy'/>
+                <Link to={item.website} target='_blank'>
+                  <div className=' flex justify-between items-center gap-2 shadow shadow-slate-400 rounded-md'>
+                    <div className=' flex justify-center items-center h-16 overflow-hidden '>
+                      <img src={`${item.img}`} alt={index+1} className=' object-cover w-auto h-auto p-1' loading='lazy' />
+                    </div>
+                    <h1 className='text-xs text-slate-500 p-1'>{item.name}</h1>
                   </div>
-                  <h1 className=' text-xs mt-2 text-slate-500 '>{item.name}</h1>
                 </Link>
               </SwiperSlide>
             ))

@@ -22,7 +22,7 @@ const TaskProvider = ({ children }) => {
     },
     hidden: (i) => ({
       opacity: 0,
-      x: i>15? i * 5 : i>5? i * 15 : i * 80,
+      x: i>15? i * 30 : i>5? i * 50 : i * 100,
       transition: {
         duration: i * 0.3
       },
@@ -31,7 +31,7 @@ const TaskProvider = ({ children }) => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: i>15? Math.abs(i) * 0.3 : i>5? Math.abs(i) * 0.5 : Math.abs(i) * 0.7,
+        duration: i>15? Math.abs(i) * 0.1 : i>5? Math.abs(i) * 0.3 : Math.abs(i) * 0.7,
         delay: i>15? Math.abs(i) * 0.1 : i>5? Math.abs(i) * 0.2 : Math.abs(i) * 0.3
       },
     })

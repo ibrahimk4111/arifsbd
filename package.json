@@ -1,6 +1,7 @@
 {
   "name": "arifs_bd",
   "private": false,
+  "license": "ISC",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

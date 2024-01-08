@@ -21,14 +21,14 @@ export default function CompanyLogo() {
       {/* top nav left */}
       <div className=' flex items-center overflow-hidden col-span-2'>
         <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-20 ' />
-        <h1 className=' md:text-2xl text-base font-bold'> (Bangladesh) Limited</h1>
+        <h1 className=' md:text-2xl text-base '> (Bangladesh) Limited</h1>
       </div>
 
       {/* top nav right */}
       <div className=" group relative ">
         <MenuItem
           onClick={()=>setIsOpen(!isOpen)}
-          className=" hover:bg-theme text-black hover:text-white rounded-lg overflow-hidden flex gap-1 px-1 "
+          className=" hover:bg-theme text-black hover:text-white rounded-lg overflow-hidden flex gap-1 px-1 shadow "
         >
           <Typography className=' text-sm '>Sister Conserns</Typography>
           <KeyboardArrowDown />

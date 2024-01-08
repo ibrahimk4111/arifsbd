@@ -81,7 +81,7 @@ const CompanyEmployee = () => {
   return (
     <div className=' py-5 '>
       <Container>
-        <div className=' grid lg:grid-cols-3 grid-cols-1 gap-3 '>
+        <div className=' grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 '>
           {
             items.map((item, index) => (
               <motion.div

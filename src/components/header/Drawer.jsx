@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HashLink as Link } from "react-router-hash-link";
 import { PriorityHigh, KeyboardArrowDown, ContactSupport, House, AccessTimeFilled, Image, CloseRounded } from "@mui/icons-material";
 import { Box, Typography, MenuItem, Drawer, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
-import { ProductDrawerBar } from '../products/ProductNavBar';
+import { ProductDrawerBar } from './ProductNavBar';
 
 export default function TemporaryDrawer({ children }) {
     const [state, setState] = useState({
@@ -50,7 +50,7 @@ export default function TemporaryDrawer({ children }) {
                             <ProductDrawerBar toggleDrawer={toggleDrawer(false)}/>
                         </Box>
 
-                        <Link onClick={toggleDrawer(false)}>
+                        <Link to="/mission" onClick={toggleDrawer(false)} >
                             <MenuItem className="h-12 hover:bg-theme hover:text-white text-black flex justify-start items-center gap-2 rounded-lg">
                                 <AccessTimeFilled className=" text-xl " />
                                 <Typography>Mission & Vission</Typography>
@@ -69,22 +69,22 @@ export default function TemporaryDrawer({ children }) {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     {
-                                        (["Profile", "Company Honor", "Members"]).map((item) => (
-                                            <Link onClick={toggleDrawer(false)} key={item}>
-                                                <MenuItem className=" hover:bg-theme hover:text-white text-black rounded-lg">{item}</MenuItem>
+                                        ([{ "name": "Profile", "route": "profile" }, { "name": "Company Honor", "route": "achievement" }, { "name": "Members", "route": "employee" }]).map((item, index) => (
+                                            <Link to={`/about/${item.route}`} onClick={toggleDrawer(false)} key={index}>
+                                                <MenuItem className=" hover:bg-theme hover:text-white text-black rounded-lg">{item.name}</MenuItem>
                                             </Link>
                                         ))
                                     }
                                 </AccordionDetails>
                             </Accordion>
                         </Box>
-                        <Link onClick={toggleDrawer(false)} to="/#gallery">
+                        <Link to="/#gallery" onClick={toggleDrawer(false)} >
                             <MenuItem className="h-12 hover:bg-theme hover:text-white text-black flex justify-start items-center gap-2 rounded-lg">
                                 <Image className=" text-xl " />
                                 <Typography>Gallery</Typography>
                             </MenuItem>
                         </Link>
-                        <Link onClick={toggleDrawer(false)} to="#contact">
+                        <Link to="/#contact" onClick={toggleDrawer(false)} >
                             <MenuItem className="h-12 hover:bg-theme hover:text-white text-black flex justify-start items-center gap-2 rounded-lg">
                                 <ContactSupport className=" text-xl " />
                                 <Typography>Contact</Typography>

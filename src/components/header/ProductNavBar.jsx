@@ -18,7 +18,7 @@ const ProductNavBar = () => {
                 <KeyboardArrowDown />
             </MenuItem>
             <Box
-                className=" scale-0 group-hover:scale-100 flex flex-col transition duration-300 divide-y-2 divide-white absolute top-9 bg-slate-100 shadow-lg rounded-lg z-10"
+                className=" scale-0 group-hover:scale-100 flex flex-col transition duration-300 divide-y-2 divide-white absolute top-9 bg-slate-100 shadow-lg rounded-lg z-10 "
             >
                 {
                     productNavItem && productNavItem.map((item, index) => (

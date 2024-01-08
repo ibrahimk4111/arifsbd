@@ -5,7 +5,6 @@ import { AnimatePresence } from 'framer-motion';
 import TaskProvider from './components/context/Context';
 import Home from './Home';
 import CompanyLogo from './components/header/CompanyLogo';
-import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
 import TopButton from './components/TopButton';
 import { StyledEngineProvider } from '@mui/material';
@@ -14,6 +13,7 @@ import CompanyProfile from './components/About/CompanyProfile';
 import Mission from './components/Mission/Mission';
 import CompanyAchievement from './components/About/CompanyAchievement';
 import CompanyEmployee from './components/About/CompanyEmployee';
+import GalleryPage from './components/gallery/GalleryPage';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
               <Route path='/about/achievement' exact Component={CompanyAchievement} />
               <Route path='/about/employee' exact Component={CompanyEmployee} />
               <Route path='/mission' exact Component={Mission} />
-              <Route path='/gallery' exact Component={Gallery} />
+              <Route path='/gallerypage' exact Component={GalleryPage} />
               <Route path='/products_company/:name' exact Component={ProductCompany} />
             </Routes>
             <TopButton />

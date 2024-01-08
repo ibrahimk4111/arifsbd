@@ -1,23 +1,14 @@
 import { KeyboardArrowUp } from '@mui/icons-material'
-import React from 'react'
-import { useState } from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from './context/Context'
 
 const TopButton = () => {
 
-    const [isVisible, setVisible] = useState(false)
-
+    const {isVisible} = useContext(UserContext)
     const backToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
-    window.onscroll = () => {
-        if (document.documentElement.scrollTop > 300) {
-            setVisible(true)
-        }
-        else {
-            setVisible(false)
-        }
-    }
 
     return (
         <div>

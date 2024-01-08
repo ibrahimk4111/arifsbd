@@ -59,16 +59,22 @@ const TaskProvider = ({ children }) => {
     setShopingCard([...shopingCard, product]);
   };
 
-  // Navigation bar open and close
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-
   // if (isOpen) {
   //   document.body.style.overflowY = "hidden"
   // }
   // else {
   //   document.body.style.overflowY = "scroll"
   // }
+  const [isVisible, setVisible] = useState(false)
+ 
+  window.onscroll = () => {
+    if (document.documentElement.scrollTop > 300) {
+        setVisible(true)
+    }
+    else {
+        setVisible(false)
+    }
+}
 
   return (
     <UserContext.Provider
@@ -80,7 +86,7 @@ const TaskProvider = ({ children }) => {
         galleryData,
         partnerData,
         shopingCard,
-        isOpen
+        isVisible
       }}
     >
       {children}

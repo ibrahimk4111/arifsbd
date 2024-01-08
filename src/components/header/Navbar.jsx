@@ -5,22 +5,15 @@ import { Box, IconButton, Typography, Badge, MenuItem, Container } from "@mui/ma
 import TemporaryDrawer from "./Drawer";
 import { ProductNavBar } from "./ProductNavBar";
 import NotificationDrawer from "./NotificationDrawer";
+import { useContext } from "react";
+import { UserContext } from "../context/Context";
 
 
 const Navbar = () => {
-    const [isVisible, setVisible] = useState(false)
 
-    window.onscroll = () => {
-        if (document.documentElement.scrollTop > 100) {
-            setVisible(true)
-        }
-        else {
-            setVisible(false)
-        }
-    }
+    const {isVisible} = useContext(UserContext)
     return (
-        <div className='mb-2 z-50 w-full'>
-            <div className={` ${isVisible?"fixed top-0 bg-theme text-white shadow w-full shadow-slate-700":"bg-theme text-white shadow w-full shadow-slate-700"}`}>
+            <div className={`z-50 ${isVisible?"fixed top-0 bg-theme text-white shadow w-full shadow-slate-700":"bg-theme text-white shadow w-full shadow-slate-700"}`}>
                 <Container className=" flex justify-between items-center ">
                     {/* toggle icon */}
                     <Box className=" lg:hidden block">
@@ -103,12 +96,8 @@ const Navbar = () => {
                             </IconButton>
                         </NotificationDrawer>
                     </Box>
-
                 </Container>
             </div>
-
-
-        </div >
     );
 };
 

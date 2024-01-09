@@ -7,9 +7,9 @@ const Footer = () => {
 
   return (
 
-    <div id='contact' className=' bg-gradient-to-bl to-slate-900 from-[#00826c] '>
+    <div id='contact' className=' bg-gradient-to-bl to-slate-900 from-[#00826c] py-5'>
       <Container className=' grid grid-cols-1 gap-3 text-white p-4 w-full h-auto'>
-        <h1 className=' text-xl font-semibold uppercase mb-5 '><span className=' underline underline-offset-8'>Contact</span> Us</h1>
+        <h1 className=' text-xl font-semibold uppercase mb-5'><span className=' underline underline-offset-8'>Contact</span> Us</h1>
 
         <section className='grid lg:grid-cols-12 gap-5 grid-cols-1 h-auto'>
           {/* address grid  */}

@@ -20,7 +20,7 @@ export default function CompanyLogo() {
     <Container className=' flex justify-between items-center p-2'>
       {/* top nav left */}
       <div className=' flex items-center overflow-hidden col-span-2'>
-        <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-20 ' />
+        <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' />
         <h1 className=' md:text-2xl text-base '> (Bangladesh) Limited</h1>
       </div>
 
@@ -30,7 +30,7 @@ export default function CompanyLogo() {
           onClick={()=>setIsOpen(!isOpen)}
           className=" hover:bg-theme text-black hover:text-white rounded-lg overflow-hidden flex gap-1 px-1 shadow "
         >
-          <Typography className=' text-sm '>Sister Conserns</Typography>
+          <Typography className=' text-xs '>Sister Conserns</Typography>
           <KeyboardArrowDown />
         </MenuItem>
         <Typography

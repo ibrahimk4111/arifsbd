@@ -1,14 +1,19 @@
 import { CloseRounded, KeyboardArrowDown, ListAltRounded } from '@mui/icons-material'
 import { Accordion, AccordionDetails, AccordionSummary, Box, Container, IconButton, Typography } from '@mui/material'
 import React, { useState } from 'react'
+// import { CircularProgressbar } from 'react-circular-progressbar';
+// import 'react-circular-progressbar/dist/styles.css';
 
 const WhyChooseUs = () => {
+
     const [isVisible, setIsVisible] = useState(false)
     const [isVisible2, setIsVisible2] = useState(false)
     const [isVisible3, setIsVisible3] = useState(false)
     const [isVisible4, setIsVisible4] = useState(false)
+
     return (
         <Container className=' py-10 '>
+
             <div className=' grid lg:grid-cols-12 grid-cols-1 gap-5 py-5 '>
                 <div className='lg:col-span-7'>
                     <p className=' pb-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed'>
@@ -64,8 +69,21 @@ const WhyChooseUs = () => {
                     </section>
                 </div>
                 <div className=' lg:col-span-5' >
-                    <p className=' rounded-md p-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed bg-slate-200'>Get a free quote here</p>
-                    <p className=' text-base [word-spacing:3px] leading-7 p-5'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
+                    <div>
+                        <p className=' rounded-md p-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed bg-slate-200'>Get a free quote here</p>
+                        <p className=' text-base [word-spacing:3px] leading-7 p-5'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
+                    </div>
+                    <div>
+                        <div>
+                            <h2>Quality of Service</h2>
+                            <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
+                        </div>
+                        <div>
+
+                            <h2>Quality of Service</h2>
+                            <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Container>

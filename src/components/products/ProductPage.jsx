@@ -1,18 +1,12 @@
 import { useContext } from 'react'
 import { UserContext } from '../context/Context'
 import { Container } from '@mui/material'
-// import { Swiper, SwiperSlide } from 'swiper/react'
-// import { Autoplay, FreeMode } from 'swiper/modules'
-
-import 'swiper/css'
 import { HashLink as Link } from 'react-router-hash-link'
 
 const Products = () => {
     const { productData } = useContext(UserContext)
-    // console.log(productData)
-
     return (
-        <div className='py-16 bg-[#f3fffd]'>
+        <div className='lg:py-10 py-5 bg-[#f3fffd]'>
             <Container>
                 <div>
                     {/* <div className='relative w-full '>
@@ -21,14 +15,13 @@ const Products = () => {
                     <hr className='h-[1px] bg-slate-300 my-2 rounded-full w-full' /> */}
 
                     <div className=' grid lg:grid-cols-12 grid-cols-1 justify-center items-center gap-5 pb-10 '>
-                        <p className=' lg:col-span-6 lg:text-3xl text-xl [word-spacing:3px] lg:leading-relaxed'>
+                        <p className=' lg:col-span-6 text-3xl [word-spacing:3px] leading-relaxed'>
                             We aim to reach out worldwide mineral importers and distributors, aimed to expand our presence in global markets.
                         </p>
-                        <p className='lg:col-span-6 text-base text-justify px-10 [word-spacing:3px] leading-7'>
+                        <p className='lg:col-span-6 text-base px-10 [word-spacing:3px] leading-7'>
                             We manufacture the best Egyptian minerals completely with passion, simplicity & creativity. We export Calcium Carbonate, LimeStone Lumps, LimeStone 2-3 mm & 250 mesh Feed Grade, Silica Sand, Agriculture Gypsum, Cullet and Glass Powder.
                         </p>
                     </div>
-                    <div className=' flex justify-end items-end m-2'><Link to="/" className='text-center text-slate-500 hover:text-white w-auto hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see all products </Link></div>
 
                     {/* <Swiper
                         speed={1300}
@@ -58,13 +51,13 @@ const Products = () => {
                         modules={[Autoplay, FreeMode]}
                         className="pt-5 px-2 pb-2"
                     > */}
-                    <section className=' grid lg:grid-cols-4 grid-cols-2 gap-1'>
+                    <section className=' grid lg:grid-cols-3 grid-cols-2 gap-1'>
                         {
                             productData && productData.map((item, index) => (
                                 index < 8 &&
                                 // <SwiperSlide key={index} className=' h-auto '>
                                 <Link to={item.route} key={index} className=' relative group border-[1px]'>
-                                    <div className=' flex justify-center items-center h-60 overflow-hidden '>
+                                    <div className=' flex justify-center items-center lg:h-60 h-auto overflow-hidden '>
                                         <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto' loading=' lazy ' />
                                     </div>
 

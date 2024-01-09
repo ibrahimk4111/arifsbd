@@ -10,7 +10,7 @@ const Gallery = () => {
     // console.log( galleryData )
 
     return (
-        <div id='gallery' className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed py-10 my-5'>
+        <div id='gallery' className=' bg-gradient-to-t from-slate-900 to-theme bg-fixed py-10 '>
             <Container >
                 <div className='flex flex-col'>
                     <div className=' flex justify-between items-center '>

@@ -24,7 +24,7 @@ const Products = () => {
                         <p className=' lg:col-span-6 lg:text-3xl text-xl [word-spacing:3px] lg:leading-relaxed'>
                             We aim to reach out worldwide mineral importers and distributors, aimed to expand our presence in global markets.
                         </p>
-                        <p className='lg:col-span-6 text-base text-justify px-10 [word-spacing:3px] leading-7'>
+                        <p className='lg:col-span-6 text-base lg:px-10 px-5 [word-spacing:3px] leading-7'>
                             We manufacture the best Egyptian minerals completely with passion, simplicity & creativity. We export Calcium Carbonate, LimeStone Lumps, LimeStone 2-3 mm & 250 mesh Feed Grade, Silica Sand, Agriculture Gypsum, Cullet and Glass Powder.
                         </p>
                     </div>

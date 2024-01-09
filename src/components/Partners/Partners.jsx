@@ -12,7 +12,7 @@ const Partners = () => {
   // console.log( partnerData )
 
   return (
-    <div id='partners' className='py-5'>
+    <div id='partners' className='py-10'>
       <Container >
         <div className='relative w-full'>
           <h1 className='uppercase font-semibold text-xl text-slate-400'> Our Partners </h1>

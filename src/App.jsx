@@ -1,6 +1,6 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/header/Navbar'
+import Navbar from './components/header/Navbar';
 import { AnimatePresence } from 'framer-motion';
 import TaskProvider from './components/context/Context';
 import Home from './Home';
@@ -18,7 +18,6 @@ import GalleryPage from './components/gallery/GalleryPage';
 function App() {
   return (
     <TaskProvider>
-
       <AnimatePresence>
         <Router>
           <StyledEngineProvider injectFirst>

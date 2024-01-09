@@ -29,7 +29,7 @@ const Gallery = () => {
                         <section >
                             {
                                 galleryData.map((event, index) => (
-                                    index < 1 &&
+                                    
                                     <Accordion key={index} >
                                         <AccordionSummary className=' bg-[#415f5f] flex justify-center items-center ' expandIcon={<KeyboardArrowDown className=' text-white ' />}>
                                             <IconButton>

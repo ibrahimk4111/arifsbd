@@ -18,7 +18,6 @@ const GalleryPage = () => {
                             <FormatQuoteOutlined className='absolute md:-top-5 -top-3 left-0 md:text-6xl text-2xl rotate-180 blur-[3px]' />
                             <h1 className='lg:ml-20 ml-7 uppercase font-semibold text-xl '> Event Images </h1>
                         </div>
-                        <Link to="/gallery" className=' hover:text-white text-center w-24 hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see more </Link>
                     </div>
                     <hr className=' h-[1px] bg-slate-300 my-2 rounded-full w-full' />
                     <h1 className=' lg:w-[80%] w-full text-justify py-5 '>Every year we arrange and participate several international functions and events to develop agricultural growth of Bangladesh. </h1>

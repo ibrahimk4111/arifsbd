@@ -16,9 +16,9 @@ const Mission = () => {
                             whileInView="visible"
                             variants={variants}
                             custom={1}
-                            // viewport={{ once: true }}
+                            viewport={{ once: true }}
                             exit="hidden"
-                            className=' shadow shadow-slate-400 p-5 z-50 bg-white rounded-md '
+                            className=' shadow shadow-slate-400 p-5 bg-white rounded-md '
                         >
                             <h2 className=' text-xl text-theme font-semibold'>Our Mission & Vission</h2>
                             <hr className=' h-1 mb-5 border-slate-400 mt-2' />
@@ -31,13 +31,12 @@ const Mission = () => {
                             </div>
                         </motion.section>
                         <motion.section
-                            className=' shadow shadow-slate-300 p-3 z-50 bg-white rounded-md '
                             initial="hidden"
                             whileInView="visible"
                             variants={variants}
                             custom={2}
-                            // viewport={{ once: true }}
-
+                            viewport={{ once: true }}
+                            className=' shadow shadow-slate-400 p-3 bg-white rounded-md '
                         >
                             <h2 className=' text-xl text-theme font-semibold'>Our Purpose</h2>
                             <hr className=' h-1 mb-5 border-slate-400 mt-2' />

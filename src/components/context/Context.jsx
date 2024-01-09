@@ -4,38 +4,6 @@ import { createContext, useEffect, useState } from "react";
 export const UserContext = createContext();
 
 const TaskProvider = ({ children }) => {
-  const hello = "hello from context";
-  const variants = {
-    navOpen: {
-      opacity: 1,
-      width: "100%",
-      transition: {
-        duration: 0.7,
-      },
-    },
-    navClosed: {
-      opacity: 0,
-      width: 0,
-      transition: {
-        duration: 0.7,
-      },
-    },
-    hidden: (i) => ({
-      opacity: 0,
-      x: i>15? i * 30 : i>5? i * 50 : i * 100,
-      transition: {
-        duration: i * 0.3
-      },
-    }),
-    visible: (i) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: i>15? Math.abs(i) * 0.1 : i>5? Math.abs(i) * 0.3 : Math.abs(i) * 0.7,
-        delay: i>15? Math.abs(i) * 0.1 : i>5? Math.abs(i) * 0.2 : Math.abs(i) * 0.3
-      },
-    })
-  };
 
   const [productData, setProductData] = useState([]);
   const [partnerData, setpartnerData] = useState([]);
@@ -54,27 +22,51 @@ const TaskProvider = ({ children }) => {
     fetchedData('./localProductNavItem.json', setProductNavItem)
   }, []);
 
-  const [shopingCard, setShopingCard] = useState([]);
-  const buyNowBtn = (product) => {
-    setShopingCard([...shopingCard, product]);
-  };
 
-  // if (isOpen) {
-  //   document.body.style.overflowY = "hidden"
-  // }
-  // else {
-  //   document.body.style.overflowY = "scroll"
-  // }
+  // animation part 
   const [isVisible, setVisible] = useState(false)
- 
+
   window.onscroll = () => {
     if (document.documentElement.scrollTop > 300) {
-        setVisible(true)
+      setVisible(true)
     }
     else {
-        setVisible(false)
+      setVisible(false)
     }
-}
+  }
+
+  const hello = "hello from context";
+  const variants = {
+    navOpen: {
+      opacity: 1,
+      width: "100%",
+      transition: {
+        duration: 0.7,
+      },
+    },
+    navClosed: {
+      opacity: 0,
+      width: 0,
+      transition: {
+        duration: 0.7,
+      },
+    },
+    hidden: (i) => ({
+      opacity: 0,
+      x: i > 15 ? i * 30 : i > 5 ? i * 30 : i * 70,
+      transition: {
+        duration: i * 0.3
+      },
+    }),
+    visible: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: i > 15 ? Math.abs(i) * 0.1 : i > 5 ? Math.abs(i) * 0.3 : Math.abs(i) * 0.7,
+        delay: i > 15 ? Math.abs(i) * 0.1 : i > 5 ? Math.abs(i) * 0.2 : Math.abs(i) * 0.3
+      },
+    })
+  };
 
   return (
     <UserContext.Provider
@@ -85,7 +77,6 @@ const TaskProvider = ({ children }) => {
         productNavItem,
         galleryData,
         partnerData,
-        shopingCard,
         isVisible
       }}
     >

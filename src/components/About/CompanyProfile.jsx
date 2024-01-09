@@ -24,8 +24,8 @@ const CompanyProfile = () => {
                 <img src="/arifsbd/images/karif.jpg" alt="..." className='  w-auto h-auto ' />
               </div>
               <div className=' lg:col-span-8 col-span-7 pr-4 lg:flex-none flex flex-col justify-end'>
-                <h1 className=' text-xl uppercase font-semibold mb-2 '>K.K Arif</h1>
-                <p className=' text-base font-semibold'>Managing Director </p>
+                <h1 className=' text-xl uppercase font-semibold mb-2 font-serif'>K.K Arif</h1>
+                <p className=' text-base font-semibold font-serif'>Managing Director </p>
                 <p className=' text-base'>Email: cdm@dhaka.net</p>
                 <hr className=' h-1 border-slate-300 my-2 rounded-full' />
                 <p className=' lg:block hidden text-sm text-justify  [word-spacing:4px] leading-6'>Lorem ips quia? lore Eum, consequuntur dignissimos libero, explicabo necessitatibus, repudiandae repellat eaque delectus ut odit veniam soluta consequatur.</p>
@@ -46,7 +46,7 @@ const CompanyProfile = () => {
                 <img src="/arifsbd/images/skhan.png" alt="..." className='  w-auto h-auto ' />
               </div>
               <div className=' lg:col-span-8 col-span-7 pr-4 lg:flex-none flex flex-col justify-end'>
-                <h1 className=' text-xl uppercase font-semibold mb-2 '>S.A Khan</h1>
+                <h1 className=' text-xl uppercase font-semibold mb-2 font-serif'>S.A Khan</h1>
                 <p className=' text-base font-semibold font-serif'>Executive Director </p>
                 <p className=' text-base'>Email: arifs@dhaka.net</p>
                 <hr className=' h-1 border-slate-300 my-2 rounded-full' />

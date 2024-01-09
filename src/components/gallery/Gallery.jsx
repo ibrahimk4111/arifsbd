@@ -15,10 +15,10 @@ const Gallery = () => {
                 <div className='flex flex-col'>
                     <div className=' flex justify-between items-center '>
                         <div className='relative w-full'>
-                            <FormatQuoteOutlined className='absolute md:-top-5 -top-3 left-0 text-white md:text-6xl text-2xl rotate-180 blur-[2px]' />
-                            <h1 className='lg:ml-20 ml-7 uppercase font-semibold text-xl text-white'> Event Images </h1>
+                            <FormatQuoteOutlined className='absolute lg:-top-5 -top-3 left-0 text-white lg:text-6xl text-4xl rotate-180 blur-[2px]' />
+                            <h1 className='lg:ml-20 ml-14 uppercase font-semibold text-xl text-white'> Event Images </h1>
                         </div>
-                        <Link to="/gallerypage" className=' text-center text-white w-24 hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see more </Link>
+                        <Link to="/gallerypage" className=' text-sm text-center text-white w-28 hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see more </Link>
                     </div>
                     <hr className=' h-[1px] bg-slate-300 my-2 rounded-full w-full' />
                     <h1 className=' lg:w-[80%] w-full text-justify py-5 text-white'>Every year we arrange and participate several international functions and events to develop agricultural growth of Bangladesh. </h1>
@@ -26,21 +26,20 @@ const Gallery = () => {
 
                 {galleryData && galleryData.length > 0 ?
                     (
-                        <section >
+                        <section className=' flex flex-col gap-5 '>
                             {
-                                galleryData.map((event, index) => (
-                                    
-                                    <Accordion key={index} >
+                                galleryData.map((event, index) => (  
+                                    <Accordion key={index}>
                                         <AccordionSummary className=' bg-[#415f5f] flex justify-center items-center ' expandIcon={<KeyboardArrowDown className=' text-white ' />}>
                                             <IconButton>
                                                 <ListAltRounded className='text-white' />
                                             </IconButton>
                                             <Box className="flex justify-center items-center">
-                                                <Typography className=' md:text-lg text-sm text-white uppercase px-2'> {event.name} </Typography>
+                                                <Typography className=' lg:text-lg text-sm text-white uppercase px-2'> {event.name} </Typography>
                                             </Box>
                                         </AccordionSummary>
                                         <hr className=' h-0 bg-slate-300 mb-5 mt-2 rounded-full' />
-                                        <AccordionDetails className=' grid lg:grid-cols-4 grid-cols-2 gap-3 overflow-y-auto max-h-[70vh]'>
+                                        <AccordionDetails className=' grid lg:grid-cols-4 grid-cols-2 gap-3 overflow-y-auto max-h-[55vh]'>
                                             {event.imgs && (event.imgs).map((img, index) => (
                                                 <div key={index} className=' overflow-hidden relative w-full '>
                                                     <img src={`${img}`} alt=".." className=' object-cover rounded-md w-full' loading='lazy'/>

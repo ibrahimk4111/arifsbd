@@ -41,7 +41,7 @@ const About = () => {
                         <p className=' md:block hidden'>One philosophy, that of high yield, has contributed to our continued growth and established our professional reputation, dedication, product selection and technological expertise is reflected in every aspect of Arifs activities. Our philosophy had been and always will be to serve our customers with value and assurance.</p>
                     </div>
                     <Link to="/about/profile" >
-                        <button style={{ backgroundImage: `url(/arifsbd/images/blob.gif)` }} className=' bg-cover h-16 w-16 text-white mt-3'><h1 className=' text-[5px] '>Details</h1></button>
+                        <button style={{ backgroundImage: `url(/arifsbd/images/blob.gif)` }} className=' bg-cover h-16 w-16 text-white mt-3'><h1 className=' text-xs '>Details</h1></button>
                     </Link>
                 </motion.div>
             </Container>

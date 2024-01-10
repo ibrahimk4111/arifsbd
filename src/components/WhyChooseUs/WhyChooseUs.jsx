@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
     const timer = () => {
         setInterval(() => {
             setProgress((prevProgress) => (prevProgress >= 95 ? prevProgress = 95 : prevProgress + 1));
-        }, 50);
+        }, 80);
     }
     //     timer()
     // }, [])
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
 
             <div className=' grid lg:grid-cols-12 grid-cols-1 gap-5 py-5 '>
                 <div className='lg:col-span-7'>
-                    <p className=' pb-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed'>
+                    <p className=' pb-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed font-semibold'>
                         We are famous for our High Quality Minerals
                     </p>
                     <section className={`flex flex-col gap-5 `}>
@@ -84,12 +84,11 @@ const WhyChooseUs = () => {
                 </div>
                 <div className=' lg:col-span-5' >
                     <div>
-                        <p className=' rounded-md p-3 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed bg-slate-200'>Get a free quote here</p>
-                        <p className=' text-base [word-spacing:3px] leading-7 p-5'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
+                        <p className=' rounded-md p-3 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed mt-5 bg-slate-100'>Get a free quote here</p>
+                        <p className=' text-base [word-spacing:3px] leading-7 py-5 px-3 text-justify'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
                     </div>
                     <div className=' grid grid-cols-1 gap-8'>
-                        <motion.div
-                            whileInView={timer}
+                        <div
                             className=' flex justify-center items-center gap-5'
                         >
                             <div>
@@ -110,10 +109,10 @@ const WhyChooseUs = () => {
                                 />
                             </div>
                             <div className=' flex flex-col justify-center items-start'>
-                                <h2 className=' text-2xl font-semibold mb-3'>Quality of Service</h2>
-                                <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
+                                <h2 className=' text-2xl font-semibold mb-2'>Quality of Service</h2>
+                                <p className='[word-spacing:3px] leading-7 text-sm'>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
                             </div>
-                        </motion.div>
+                        </div>
                         <motion.div
                             whileInView={timer}
                             className=' flex justify-center items-center gap-5'
@@ -136,10 +135,11 @@ const WhyChooseUs = () => {
                                 />
                             </div>
                             <div className=' flex flex-col justify-center items-start'>
-                                <h2 className=' text-2xl font-semibold mb-3'>Purity</h2>
-                                <p>High purity Egyptian minerals, prized for their quality, cater to industries worldwide, meeting stringent standards and demands.</p>
+                                <h2 className=' text-2xl font-semibold mb-2'>Purity</h2>
+                                <p className='[word-spacing:3px] leading-7 text-sm'>High purity Egyptian minerals, prized for their quality, cater to industries worldwide, meeting stringent standards and demands.</p>
                             </div>
                         </motion.div>
+
                     </div>
                 </div>
             </div>

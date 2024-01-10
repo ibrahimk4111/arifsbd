@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
     // useEffect(() => {
     const timer = () => {
         setInterval(() => {
-            setProgress((prevProgress) => (prevProgress >= 95 ? prevProgress = 95 : prevProgress + 1));
+            setProgress((prevProgress) => (prevProgress >= 93 ? prevProgress = 93 : prevProgress + 1));
         }, 80);
     }
     //     timer()
@@ -89,7 +89,7 @@ const WhyChooseUs = () => {
                     </div>
                     <div className=' grid grid-cols-1 gap-8'>
                         <div
-                            className=' flex justify-center items-center gap-5'
+                            className=' flex lg:flex-row flex-col justify-center items-center gap-5'
                         >
                             <div>
                                 <Progress
@@ -108,14 +108,14 @@ const WhyChooseUs = () => {
                                     }
                                 />
                             </div>
-                            <div className=' flex flex-col justify-center items-start'>
+                            <div className=' flex flex-col justify-center lg:items-start items-center'>
                                 <h2 className=' text-2xl font-semibold mb-2'>Quality of Service</h2>
-                                <p className='[word-spacing:3px] leading-7 text-sm'>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
+                                <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
                             </div>
                         </div>
                         <motion.div
                             whileInView={timer}
-                            className=' flex justify-center items-center gap-5'
+                            className=' flex lg:flex-row flex-col justify-center items-center gap-5'
                         >
                             <div>
                                 <Progress
@@ -134,9 +134,9 @@ const WhyChooseUs = () => {
                                     }
                                 />
                             </div>
-                            <div className=' flex flex-col justify-center items-start'>
+                            <div className=' flex flex-col justify-center lg:items-start items-center'>
                                 <h2 className=' text-2xl font-semibold mb-2'>Purity</h2>
-                                <p className='[word-spacing:3px] leading-7 text-sm'>High purity Egyptian minerals, prized for their quality, cater to industries worldwide, meeting stringent standards and demands.</p>
+                                <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>High purity Egyptian minerals, prized for their quality, cater to industries worldwide, meeting stringent standards and demands.</p>
                             </div>
                         </motion.div>
 

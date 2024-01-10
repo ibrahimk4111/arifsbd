@@ -14,6 +14,7 @@ import Mission from './components/Mission/Mission';
 import CompanyAchievement from './components/About/CompanyAchievement';
 import CompanyEmployee from './components/About/CompanyEmployee';
 import GalleryPage from './components/gallery/GalleryPage';
+import ProductPage from './components/products/ProductPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path='/about/employee' exact Component={CompanyEmployee} />
               <Route path='/mission' exact Component={Mission} />
               <Route path='/gallerypage' exact Component={GalleryPage} />
+              <Route path='/productpage' exact Component={ProductPage} />
               <Route path='/products_company/:name' exact Component={ProductCompany} />
             </Routes>
             <TopButton />

@@ -8,7 +8,7 @@ const About = () => {
     const { variants } = useContext(UserContext)
 
     return (
-        <div className='lg:py-20 py-5'>
+        <div className='lg:py-10 py-5'>
             <Container className=' grid lg:grid-cols-12 grid-cols-1 lg:gap-10 gap-5'>
                 <motion.div
                     className=' flex justify-center items-center lg:col-span-7'

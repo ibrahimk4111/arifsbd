@@ -1,10 +1,24 @@
-import { CloseRounded, KeyboardArrowDown, ListAltRounded } from '@mui/icons-material'
-import { Accordion, AccordionDetails, AccordionSummary, Box, Container, IconButton, Typography } from '@mui/material'
-import React, { useState } from 'react'
-// import { CircularProgressbar } from 'react-circular-progressbar';
-// import 'react-circular-progressbar/dist/styles.css';
+import { CloseRounded, KeyboardArrowDown } from '@mui/icons-material'
+import { Accordion, AccordionDetails, AccordionSummary, Box, CircularProgress, Container, Typography } from '@mui/material'
+import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
+import { Progress } from 'react-sweet-progress';
+import "react-sweet-progress/lib/style.css";
 
 const WhyChooseUs = () => {
+
+    const [progress, setProgress] = useState(1);
+
+    // useEffect(() => {
+    const timer = () => {
+        setInterval(() => {
+            setProgress((prevProgress) => (prevProgress >= 95 ? prevProgress = 95 : prevProgress + 1));
+        }, 100);
+    }
+    //     timer()
+    // }, [])
+
+
 
     const [isVisible, setIsVisible] = useState(false)
     const [isVisible2, setIsVisible2] = useState(false)
@@ -70,20 +84,63 @@ const WhyChooseUs = () => {
                 </div>
                 <div className=' lg:col-span-5' >
                     <div>
-                        <p className=' rounded-md p-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed bg-slate-200'>Get a free quote here</p>
+                        <p className=' rounded-md p-3 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed bg-slate-200'>Get a free quote here</p>
                         <p className=' text-base [word-spacing:3px] leading-7 p-5'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
                     </div>
-                    {/* <div>
-                        <div>
-                            <h2>Quality of Service</h2>
-                            <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
-                        </div>
-                        <div>
-
-                            <h2>Quality of Service</h2>
-                            <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
-                        </div>
-                    </div> */}
+                    <div className=' grid grid-cols-1 gap-8'>
+                        <motion.div
+                            whileInView={timer}
+                            className=' flex justify-center items-center gap-5'
+                        >
+                            <div>
+                                <Progress
+                                    type="circle"
+                                    percent={progress}
+                                    width={100}
+                                    // symbol={progress}
+                                    theme={
+                                        {
+                                            active: {
+                                                symbol: progress + '%',
+                                                trailColor: 'yellow',
+                                                color: 'orange'
+                                            }
+                                        }
+                                    }
+                                />
+                            </div>
+                            <div className=' flex flex-col justify-center items-start'>
+                                <h2 className=' text-2xl font-semibold mb-3'>Quality of Service</h2>
+                                <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            whileInView={timer}
+                            className=' flex justify-center items-center gap-5'
+                        >
+                            <div>
+                                <Progress
+                                    type="circle"
+                                    percent={progress + 2}
+                                    width={100}
+                                    // symbol={progress}
+                                    theme={
+                                        {
+                                            active: {
+                                                symbol: (progress + 2) + '%',
+                                                trailColor: 'yellow',
+                                                color: 'orange'
+                                            }
+                                        }
+                                    }
+                                />
+                            </div>
+                            <div className=' flex flex-col justify-center items-start'>
+                                <h2 className=' text-2xl font-semibold mb-3'>Purity</h2>
+                                <p>High purity Egyptian minerals, prized for their quality, cater to industries worldwide, meeting stringent standards and demands.</p>
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
             </div>
         </Container>

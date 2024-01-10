@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
                         <p className=' rounded-md p-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed bg-slate-200'>Get a free quote here</p>
                         <p className=' text-base [word-spacing:3px] leading-7 p-5'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
                     </div>
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Quality of Service</h2>
                             <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
                             <h2>Quality of Service</h2>
                             <p>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </Container>

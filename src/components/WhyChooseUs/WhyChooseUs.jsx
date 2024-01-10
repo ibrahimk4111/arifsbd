@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
     const timer = () => {
         setInterval(() => {
             setProgress((prevProgress) => (prevProgress >= 95 ? prevProgress = 95 : prevProgress + 1));
-        }, 100);
+        }, 50);
     }
     //     timer()
     // }, [])

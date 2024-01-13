@@ -12,19 +12,19 @@ const Partners = () => {
   // console.log( partnerData )
 
   return (
-    <div id='partners' className='py-10'>
-      <Container >
+    <div id='partners' className='pt-10'>
+      <Container className='bg-slate-100 py-5 rounded-lg' >
         <div className='relative w-full'>
           <h1 className='uppercase font-semibold text-xl text-slate-400'> Our Partners </h1>
         </div>
-        <hr className=' h-[1px] bg-slate-300 my-2 rounded-full w-full' />
+        <hr className=' h-[2px] bg-theme my-2 rounded-full w-full mb-5' />
 
         <Swiper
           speed={1300}
           freeMode={true}
           autoplay={{
             delay: 1000,
-            reverseDirection: true,
+            // reverseDirection: true,
             disableOnInteraction: false
           }}
           breakpoints={{
@@ -46,13 +46,13 @@ const Partners = () => {
             }
           }}
           modules={[Autoplay, FreeMode]}
-          className="pt-5 px-2 pb-2"
+          className="p-2"
         >
           {
             partnerData && partnerData.map((item, index) => (
               <SwiperSlide key={index} className=' h-auto '>
                 <Link to={item.website} target='_blank'>
-                  <div className=' grid lg:grid-cols-12 grid-cols-1 justify-center items-center gap-2 shadow shadow-slate-400 rounded-md lg:h-full h-auto'>
+                  <div className=' bg-white grid lg:grid-cols-12 grid-cols-1 justify-center items-center gap-2 shadow shadow-slate-400 rounded-md lg:h-full h-auto'>
                     <div className=' col-span-4 flex justify-center items-center h-16 overflow-hidden '>
                       <img src={`${item.img}`} alt={index+1} className=' object-cover w-auto h-auto max-h-full p-1' loading='lazy' />
                     </div>
@@ -65,6 +65,7 @@ const Partners = () => {
           }
         </Swiper>
       </Container>
+      <div className=' text-center mt-5 text-2xl text-slate-400'>&</div>
     </div>
   )
 }

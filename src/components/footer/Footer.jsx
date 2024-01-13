@@ -1,7 +1,7 @@
-import { CallRounded, GitHub, KeyboardArrowRight, LocalActivityRounded, MyLocation } from '@mui/icons-material'
-import { Container } from '@mui/material'
-import React, { useState } from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
+import { CallRounded, EmailRounded, GitHub, KeyboardArrowRight, MyLocation } from '@mui/icons-material';
+import { Container } from '@mui/material';
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
 
@@ -21,8 +21,15 @@ const Footer = () => {
             <div className='text-sm flex gap-5'>
               <MyLocation className=' bg-theme p-1 rounded-full ' />
               <div>
-                <span className=' font-bold'>Address:</span>
+                {/* <span className=' font-bold'>Address:</span> */}
                 <p className=' text-sm'>18 Rajuk Avenue (7th Fl), Motijheel C/A, Dhaka-1000, Bangladesh</p>
+              </div>
+            </div>
+            <div className='text-sm flex gap-5'>
+              <EmailRounded className=' bg-theme p-1 rounded-full ' />
+              <div className=' group cursor-pointer'>
+                <span className=' font-bold'>Email : </span>
+                <Link className=' text-sm group-hover:underline '> arifs@dhaka.net</Link>
               </div>
             </div>
             <div className='text-sm flex gap-5'>

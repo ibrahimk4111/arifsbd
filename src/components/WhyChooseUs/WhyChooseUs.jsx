@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
     // useEffect(() => {
     const timer = () => {
         setInterval(() => {
-            setProgress((prevProgress) => (prevProgress >= 93 ? prevProgress = 93 : prevProgress + 1));
+            setProgress((prevProgress) => (prevProgress >= 90 ? prevProgress = 90 : prevProgress + 1));
         }, 80);
     }
     //     timer()
@@ -88,19 +88,21 @@ const WhyChooseUs = () => {
                         <p className=' text-base [word-spacing:3px] leading-7 py-5 px-3 text-justify'>We understand the importance of every inquiry, we cater each request with utmost interest and concern. </p>
                     </div>
                     <div className=' grid grid-cols-1 gap-8'>
+
+                        {/* quality of service */}
                         <div
                             className=' flex lg:flex-row flex-col justify-center items-center gap-5'
                         >
                             <div>
                                 <Progress
                                     type="circle"
-                                    percent={progress}
+                                    percent={progress+5}
                                     width={100}
                                     // symbol={progress}
                                     theme={
                                         {
                                             active: {
-                                                symbol: progress + '%',
+                                                symbol: progress+5 + '%',
                                                 trailColor: 'yellow',
                                                 color: 'orange'
                                             }
@@ -113,6 +115,8 @@ const WhyChooseUs = () => {
                                 <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
                             </div>
                         </div>
+
+                        {/* Purity  */}
                         <motion.div
                             whileInView={timer}
                             className=' flex lg:flex-row flex-col justify-center items-center gap-5'
@@ -120,13 +124,13 @@ const WhyChooseUs = () => {
                             <div>
                                 <Progress
                                     type="circle"
-                                    percent={progress + 2}
+                                    percent={progress }
                                     width={100}
                                     // symbol={progress}
                                     theme={
                                         {
                                             active: {
-                                                symbol: (progress + 2) + '%',
+                                                symbol: (progress ) + '%',
                                                 trailColor: 'yellow',
                                                 color: 'orange'
                                             }

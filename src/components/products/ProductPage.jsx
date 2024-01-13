@@ -26,14 +26,17 @@ const ProductPage = () => {
                         {
                             productData && productData.map((item, index) => (
 
-                                <Link to="/" key={index} className=' relative group border-[1px]'>
-                                    <div className=' flex justify-center items-center h-60 overflow-hidden '>
-                                        <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto group-hover:skew-y-3 group-hover:scale-125 sca transition-all duration-700 ease-in' loading=' lazy ' />
+                                <Link to="/" key={index}>
+                                    <div className=' relative group border-[1px]'>
+                                        <div className=' flex justify-center items-center h-60 overflow-hidden '>
+                                            <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto group-hover:skew-y-3 group-hover:scale-125 sca transition-all duration-700 ease-in' loading=' lazy ' />
+                                        </div>
+
+                                        <div className=' flex justify-center items-end absolute bottom-0 w-full h-0 opacity-0 group-hover:h-28 group-hover:opacity-100 z-10 group-hover:bg-gradient-to-t from-theme p-3 transition-height duration-200 ease-in group-hover:rounded-md'>
+                                            <h1 className=' text-sm mt-2 text-white '>{item.name}</h1>
+                                        </div>
                                     </div>
 
-                                    <div className=' flex justify-center items-end absolute bottom-0 w-full h-0 opacity-0 group-hover:h-28 group-hover:opacity-100 z-10 group-hover:bg-gradient-to-t from-theme p-3 transition-height duration-200 ease-in group-hover:rounded-md'>
-                                        <h1 className=' text-sm mt-2 text-white '>{item.name}</h1>
-                                    </div>
                                 </Link>
                             ))
                         }

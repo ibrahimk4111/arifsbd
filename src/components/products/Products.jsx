@@ -12,7 +12,7 @@ const Products = () => {
     // console.log(productData)
 
     return (
-        <div className='py-16 bg-[#f4fffd]'>
+        <div className='py-16 bg-slate-100'>
             <Container>
                 <div>
                     {/* <div className='relative w-full '>
@@ -58,18 +58,20 @@ const Products = () => {
                         modules={[Autoplay, FreeMode]}
                         className="pt-5 px-2 pb-2"
                     > */}
-                    <section className=' grid lg:grid-cols-4 grid-cols-2 gap-1'>
+                    <section className=' grid lg:grid-cols-4 grid-cols-2 gap-2'>
                         {
                             productData && productData.map((item, index) => (
                                 index < 4 &&
                                 // <SwiperSlide key={index} className=' h-auto '>
-                                <Link to="/" key={index} className=' relative group border-[1px]'>
-                                    <div className=' flex justify-center items-center h-60 overflow-hidden '>
-                                        <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto group-hover:skew-y-3 group-hover:scale-125 sca transition-all duration-700 ease-in' loading=' lazy ' />
-                                    </div>
+                                <Link to="/" key={index} className='group'>
+                                    <div className=' relative border-[1px] group-hover:border-theme group-hover:bg-white group-hover:shadow-md shadow-slate-500 rounded-md transition-all duration-700 ease-in'>
+                                        <div className=' flex justify-center items-center h-60 overflow-hidden '>
+                                            <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto group-hover:skew-y-3 group-hover:scale-125 sca transition-all duration-700 ease-in' loading=' lazy ' />
+                                        </div>
 
-                                    <div className=' flex justify-center items-end absolute bottom-0 w-full h-0 opacity-0 group-hover:h-28 group-hover:opacity-100 z-10 group-hover:bg-gradient-to-t from-theme p-3 transition-height duration-200 ease-in group-hover:rounded-md'>
-                                        <h1 className=' text-sm mt-2 text-white '>{item.name}</h1>
+                                        <div className=' flex justify-center items-end absolute bottom-0 w-full h-0 opacity-0 group-hover:h-28 group-hover:opacity-100 z-10 group-hover:bg-gradient-to-t from-theme p-3 transition-height duration-200 ease-in group-hover:rounded-md'>
+                                            <h1 className=' text-sm mt-2 text-white '>{item.name}</h1>
+                                        </div>
                                     </div>
                                 </Link>
                                 /* <Link>

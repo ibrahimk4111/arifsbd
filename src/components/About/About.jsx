@@ -19,7 +19,7 @@ const About = () => {
                     viewport={{ once: true }}
                 >
                     <video autoPlay muted loop className='h-auto w-auto max-h-full max-w-full rounded-lg shadow-lg shadow-slate-400 '>
-                        <source src="/arifsbd/images/video.mp4" type="video/mp4" />
+                        <source src="/arifsbd/images/video.webm" type="video/webm" />
                         <h1>video</h1>
                     </video>
                 </motion.div>

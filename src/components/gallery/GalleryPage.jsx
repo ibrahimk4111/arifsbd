@@ -41,7 +41,7 @@ const GalleryPage = () => {
                                         <AccordionDetails className=' grid lg:grid-cols-4 grid-cols-2 gap-3 overflow-y-auto max-h-[70vh]'>
                                             {event.imgs && (event.imgs).map((img, index) => (
                                                 <div key={index} className=' overflow-hidden relative w-full '>
-                                                    <img src={`${img}`} alt=".." className=' object-cover rounded-md w-full' />
+                                                    <img src={`${img}`} alt=".." className=' object-cover rounded-md w-full' loading='lazy' />
                                                     <div className=' absolute top-0 left-0 w-full h-full flex justify-center items-end '>
                                                         <div className='w-full bg-gradient-to-t from-black rounded-b-md p-2 text-white '>
                                                             <h1 className=' w-full text-end'>{index + 1}</h1>

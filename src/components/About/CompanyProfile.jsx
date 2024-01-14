@@ -21,7 +21,7 @@ const CompanyProfile = () => {
           >
             <div className='grid grid-cols-12 gap-5 '>
               <div className=' lg:col-span-4 col-span-5 overflow-hidden h-full '>
-                <img src="/arifsbd/images/karif.jpg" alt="..." className='  w-auto h-auto ' />
+                <img src="/arifsbd/images/karif.jpg" alt="..." className='  w-auto h-auto ' loading='lazy'/>
               </div>
               <div className=' lg:col-span-8 col-span-7 pr-4 lg:flex-none flex flex-col justify-end'>
                 <h1 className=' text-xl uppercase font-semibold mb-2 font-serif'>K.K Arif</h1>
@@ -43,7 +43,7 @@ const CompanyProfile = () => {
           >
             <div className='grid grid-cols-12 gap-5 '>
               <div className=' lg:col-span-4 col-span-5 overflow-hidden h-full '>
-                <img src="/arifsbd/images/skhan.png" alt="..." className='  w-auto h-auto ' />
+                <img src="/arifsbd/images/skhan.png" alt="..." className='  w-auto h-auto ' loading='lazy'/>
               </div>
               <div className=' lg:col-span-8 col-span-7 pr-4 lg:flex-none flex flex-col justify-end'>
                 <h1 className=' text-xl uppercase font-semibold mb-2 font-serif'>S.A Khan</h1>

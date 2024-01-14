@@ -96,7 +96,7 @@ const CompanyEmployee = () => {
                 <h1>{index+1}</h1>
                 <div className='grid grid-cols-12 gap-3 '>
                   <div className=' lg:col-span-4 col-span-5 overflow-hidden h-full '>
-                    <img src="/arifsbd/images/karif.jpg" alt="..." className='  w-auto h-auto ' />
+                    <img src={`/arifsbd/${item.img}`} alt="..." className='  w-auto h-auto ' loading='lazy'/>
                   </div>
                   <div className=' lg:col-span-8 col-span-7 pr-2 lg:flex-none flex flex-col justify-end'>
                     <h1 className=' text-lg uppercase font-semibold mb-2 '>{item.name}</h1>

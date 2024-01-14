@@ -20,7 +20,7 @@ export default function CompanyLogo() {
     <Container className=' flex justify-between items-center p-2'>
       {/* top nav left */}
       <div className=' flex items-center overflow-hidden col-span-2'>
-        <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' />
+        <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' loading='lazy'/>
         <h1 className=' md:text-2xl text-base '> (Bangladesh) Limited</h1>
       </div>
 

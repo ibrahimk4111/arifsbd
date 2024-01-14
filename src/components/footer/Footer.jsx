@@ -15,7 +15,7 @@ const Footer = () => {
           {/* address grid  */}
           <div className='flex flex-col gap-5 md:col-span-4'>
             <div className=' flex items-center overflow-hidden'>
-              <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover w-28 ' loading='lazy'/>
+              <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover w-20 ' loading='lazy'/>
               <h1 className=' text-base font-bold'> (Bangladesh) Limited</h1>
             </div>
             <div className='text-sm flex gap-5'>

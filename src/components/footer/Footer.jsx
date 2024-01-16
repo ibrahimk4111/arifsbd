@@ -12,7 +12,8 @@ const Footer = () => {
         <h1 className=' text-xl font-semibold uppercase mb-5'><span className=' underline underline-offset-8'>Contact</span> Us</h1>
 
         <section className='grid lg:grid-cols-12 gap-5 grid-cols-1 h-auto'>
-          {/* address grid  */}
+          
+          {/* address grid section */}
           <div className='flex flex-col gap-5 md:col-span-4'>
             <div className=' flex items-center overflow-hidden'>
               <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover w-20 ' loading='lazy'/>

@@ -46,7 +46,7 @@ const Footer = () => {
             <iframe
               className=" rounded-lg w-full min-h-full h-52 "
               title="Arifs (Bangladesh) Ltd"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.5551060372236!2d90.41215227425799!3d23.72757648965419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8582cff629d%3A0xd646e704f2db23e3!2sArifs%20(BD)%20Ltd%2018%20DIT%20Avenue%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1705415346424!5m2!1sen!2sbd" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.5551060372236!2d90.41215227425799!3d23.72757648965419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8582cff629d%3A0xd646e704f2db23e3!2sArifs%20(BD)%20Ltd%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1705415346424!5m2!1sen!2sbd" 
               allowfullscreen="" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade"

@@ -53,7 +53,7 @@ const Footer = () => {
             ></iframe>
           </div>
 
-          {/* Navigation  grid*/}
+          {/* Navigation  grid section*/}
           <div className=' md:col-span-4 grid grid-cols-5 gap-3 text-sm h-full'>
             <div className=' col-span-2 '>
               <h1 className='underline underline-offset-4 md:text-xl text-lg font-medium mb-3'>Navigate to</h1>
@@ -66,7 +66,7 @@ const Footer = () => {
               </nav>
             </div>
 
-            {/* important grid */}
+            {/* important grid section */}
             <div className=' col-span-3'>
               <h1 className='underline underline-offset-4 md:text-xl text-lg font-medium mb-3'>Sister Concern</h1>
               <nav className=' flex flex-col justify-start items-start '>

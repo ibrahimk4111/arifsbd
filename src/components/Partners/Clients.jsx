@@ -48,7 +48,7 @@ const Clients = () => {
           modules={[Autoplay, FreeMode]}
           className="pt-5 px-2 pb-2"
         > */}
-                <section className=' grid lg:grid-cols-8 grid-cols-4 justify-center items-center gap-3 p-2'>
+                <section className=' grid justify-center items-center lg:grid-cols-8 grid-cols-4 gap-3 p-2'>
                     {
                         ourClients && ourClients.map((item, index) => (
                             // <SwiperSlide key={index} className=' h-auto '>

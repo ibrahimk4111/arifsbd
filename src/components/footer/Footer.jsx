@@ -46,7 +46,6 @@ const Footer = () => {
             <iframe
               className=" rounded-lg w-full min-h-full h-52 "
               title="Arifs (Bangladesh) Ltd"
-{/*               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.26936669020685!2d90.40802717220028!3d23.736327095054584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f48430033f%3A0x73683be2a43b3c1b!2sPioneer%20Law%20Associates!5e0!3m2!1sen!2sbd!4v1689211247540!5m2!1sen!2sbd" */}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.5551060372236!2d90.41215227425799!3d23.72757648965419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8582cff629d%3A0xd646e704f2db23e3!2s18%20DIT%20Ave%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1705415346424!5m2!1sen!2sbd" 
               allowfullscreen="" 
               loading="lazy" 
@@ -92,3 +91,6 @@ const Footer = () => {
 }
 
 export default Footer
+
+
+// src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.26936669020685!2d90.40802717220028!3d23.736327095054584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f48430033f%3A0x73683be2a43b3c1b!2sPioneer%20Law%20Associates!5e0!3m2!1sen!2sbd!4v1689211247540!5m2!1sen!2sbd" 

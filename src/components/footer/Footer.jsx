@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* map grid */}
+          {/* map grid section*/}
           <div className=' lg:col-span-4 flex justify-center items-end'>
             <iframe
               className=" rounded-lg w-full min-h-full h-52"

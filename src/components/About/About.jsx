@@ -8,10 +8,10 @@ const About = () => {
     const { variants } = useContext(UserContext)
 
     return (
-        <div className='lg:py-10 py-5'>
+        <div className='lg:py-16 py-5'>
             <Container className=' grid lg:grid-cols-12 grid-cols-1 lg:gap-10 gap-5'>
                 <motion.div
-                    className=' flex justify-center items-center lg:col-span-7'
+                    className=' flex justify-center items-center lg:col-span-6'
                     initial="hidden"
                     whileInView="visible"
                     variants={variants}
@@ -30,7 +30,7 @@ const About = () => {
                     variants={variants}
                     custom={2}
                     viewport={{ once: true }}
-                    className=' lg:col-span-5 '
+                    className=' lg:col-span-6 '
                 >
                     <div className=' flex flex-col justify-center items-start mb-3'>
                         {/* <h1 className=' text-xl font-semibold uppercase text-theme  underline underline-offset-8'>About</h1> */}

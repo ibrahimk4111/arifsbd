@@ -21,11 +21,11 @@ const Products = () => {
                     <hr className='h-[1px] bg-slate-300 my-2 rounded-full w-full' /> */}
 
                     <div className=' grid lg:grid-cols-12 grid-cols-1 justify-center items-center gap-5 pb-10 '>
-                        <p className=' lg:col-span-6 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed'>
-                            We aim to reach out worldwide mineral importers and distributors, aimed to expand our presence in global markets.
+                        <p className=' lg:col-span-6 text-3xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed'>
+                            We aim to reach out worldwide Veterinary medicines, vaccines, Livestock nutritional products and equipments aimed to expand our presence in global markets.
                         </p>
                         <p className='lg:col-span-6 text-base lg:px-10 [word-spacing:3px] leading-7'>
-                            We manufacture the best Egyptian minerals completely with passion, simplicity & creativity. We export Calcium Carbonate, LimeStone Lumps, LimeStone 2-3 mm & 250 mesh Feed Grade, Silica Sand, Agriculture Gypsum, Cullet and Glass Powder.
+                            We manufacture the best Veterinary medicines, vaccines, Livestock nutritional products and equipments completely with passion, simplicity & creativity. We export Veterinary medicines, vaccines, Livestock nutritional products and equipments throughout the country.
                         </p>
                     </div>
                     <div className=' flex justify-end items-end m-2'><Link to="/productpage" className='text-center text-slate-500 hover:text-white w-auto hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see all products </Link></div>

@@ -30,15 +30,15 @@ const WhyChooseUs = () => {
 
             <div className=' grid lg:grid-cols-12 grid-cols-1 gap-5 py-5 '>
                 <div className='lg:col-span-7'>
-                    <p className=' pb-7 lg:text-3xl text-4xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed font-semibold'>
-                        We are famous for our High Quality Minerals
+                    <p className=' pb-7 text-2xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed font-semibold'>
+                        We are famous for our High Quality Veterinary medicines and  equipments.
                     </p>
                     <section className={`flex flex-col gap-5 `}>
 
                         <Accordion className=' shadow hover:shadow-lg shadow-slate-300 '>
                             <AccordionSummary onClick={() => { setIsVisible(prev => !prev) }} className={`${isVisible ? "bg-theme rounded-t-md text-white" : ""} transition-all duration-300 ease-in h-20`} expandIcon={!isVisible ? <KeyboardArrowDown className=' font-semibold' /> : <CloseRounded />}>
                                 <Box>
-                                    <Typography className=' text-xl px-2 font-semibold'> 1. What is the price for your mineral offerings ? </Typography>
+                                    <Typography className=' text-xl px-2 font-semibold'> 1. What is the price for your medicines and equipments offerings ? </Typography>
                                 </Box>
                             </AccordionSummary>
                             <AccordionDetails className={`${isVisible ? "scale-y-100 opacity-100 " : "scale-y-0 opacity-0"} transition-all duration-300 ease-in border-l-8 border-black p-5 leading-7 text-base`}>
@@ -112,7 +112,7 @@ const WhyChooseUs = () => {
                             </div>
                             <div className=' flex flex-col justify-center lg:items-start items-center'>
                                 <h2 className=' text-2xl font-semibold mb-2'>Quality of Service</h2>
-                                <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>Our commitment is to deliver top-quality minerals, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
+                                <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>Our commitment is to deliver top-quality medicines and equipments, guaranteeing satisfaction, trust, and loyalty among our valued customers.</p>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@ const WhyChooseUs = () => {
                             </div>
                             <div className=' flex flex-col justify-center lg:items-start items-center'>
                                 <h2 className=' text-2xl font-semibold mb-2'>Purity</h2>
-                                <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>High purity Egyptian minerals, prized for their quality, cater to industries worldwide, meeting stringent standards and demands.</p>
+                                <p className='[word-spacing:3px] leading-7 text-sm lg:text-left text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat minus quaerat eligendi, cumque aut facere perferendis.</p>
                             </div>
                         </motion.div>
 

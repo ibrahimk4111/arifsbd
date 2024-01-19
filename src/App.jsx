@@ -15,6 +15,7 @@ import CompanyAchievement from './components/About/CompanyAchievement';
 import CompanyEmployee from './components/About/CompanyEmployee';
 import GalleryPage from './components/gallery/GalleryPage';
 import ProductPage from './components/products/ProductPage';
+import ProductDetails from './components/products/ProductDetails';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path='/mission' exact Component={Mission} />
               <Route path='/gallerypage' exact Component={GalleryPage} />
               <Route path='/productpage' exact Component={ProductPage} />
+              <Route path='/productDetails/:id' exact Component={ProductDetails} />
               <Route path='/products_company/:name' exact Component={ProductCompany} />
             </Routes>
             <TopButton />

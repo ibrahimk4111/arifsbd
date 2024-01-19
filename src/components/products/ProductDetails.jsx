@@ -22,44 +22,49 @@ const ProductDetails = () => {
                     </div>
                 </div>
                 <div className=' grid lg:grid-cols-12 grid-cols-1 gap-10'>
+                    {/* left side image section */}
                     <div className=' lg:col-span-4 border-2 rounded-lg group overflow-hidden'>
                         <img src={selectedProduct.img} alt="..." className=' object-cover w-full h-auto group-hover:skew-y-3 group-hover:scale-105 sca transition-all duration-300 ease-in' loading=' lazy ' />
                     </div>
+                    
+                    {/* right side details section */}
                     <div className=' lg:col-span-8 px-4 flex flex-col gap-5'>
-                        <div className=' grid grid-cols-12 '>
-                            <div className='col-span-8'>
-                                <h1 className=' text-3xl  font-semibold text-slate-600'>{selectedProduct.name}</h1>
-                                <hr className=' h-2 ' />
-                                <table >
-                                    <tbody className=' flex flex-col justify-start items-start gap-3 py-3 px-6'>
-                                        <tr className=' flex gap-3'>
-                                            <th>Product Category</th>
-                                            <th>:</th>
-                                            <td>Medicine</td>
-                                        </tr>
-                                        <tr className=' flex gap-3'>
-                                            <th>In Stock</th>
-                                            <th>:</th>
-                                            <td className=' text-theme'>Available</td>
-                                        </tr>
-                                        <tr className=' flex gap-3'>
-                                            <th>Rating </th>
-                                            <th>:</th>
-                                            <td><Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly /></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div className=' col-span-4'>
-                                <div className=' flex justify-end items-end '>
-                                    <Link to="/#contact" className='text-center text-slate-500 hover:text-white w-auto bg-[#e0fffa] hover:bg-theme hover:font-semibold rounded-xl p-2 transition-all duration-300 ease-in '> Buy Now </Link>
+                        <div>
+                            <div className=' grid lg:grid-cols-12 grid-cols-2 '>
+                                <div className=' lg:col-span-10'>
+                                    <h1 className=' lg:text-3xl text-xl  font-semibold text-slate-600'>{selectedProduct.name}</h1>
+                                    <hr className=' h-2 ' />
+                                </div>
+                                <div className=' lg:col-span-2'>
+                                    <div className=' flex justify-end items-end '>
+                                        <Link to="/#contact" className='lg:text-base text-sm text-center text-slate-500 hover:text-white w-auto bg-[#e0fffa] hover:bg-theme rounded-xl p-1 transition-all duration-300 ease-in '> Buy Now </Link>
+                                    </div>
                                 </div>
                             </div>
+                            <table >
+                                <tbody className=' flex flex-col justify-start items-start gap-2 py-3 lg:px-6 lg:text-sm'>
+                                    <tr className=' flex gap-3'>
+                                        <th>Product Category</th>
+                                        <th>:</th>
+                                        <td>Medicine</td>
+                                    </tr>
+                                    <tr className=' flex gap-3'>
+                                        <th>In Stock</th>
+                                        <th>:</th>
+                                        <td className=' text-theme'>Available</td>
+                                    </tr>
+                                    <tr className=' flex gap-3'>
+                                        <th>Rating </th>
+                                        <th>:</th>
+                                        <td><Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div className=''>
-                            <h1 className=' text-3xl  font-semibold text-slate-600'>Product Details</h1>
+                            <h1 className=' lg:text-3xl text-xl  font-semibold text-slate-600'>Product Details</h1>
                             <hr className=' h-2 ' />
-                            <p className=' px-6 py-3 lg:text-base text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate nulla modi saepe, delectus earum, nihil laboriosam sed hic unde rerum accusantium ipsam mollitia magnam optio placeat laborum nam! Quibusdam.</p>
+                            <p className=' lg:px-6 py-3 lg:text-base text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate nulla modi saepe, delectus earum, nihil laboriosam sed hic unde rerum accusantium ipsam mollitia magnam optio placeat laborum nam! Quibusdam.</p>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ const ProductPage = () => {
                         {
                             productData && productData.map((item, index) => (
 
-                                <Link to="/" key={index}>
+                                <Link to="/productDetails/:id" key={index}>
                                     <div className=' relative group border-[1px]'>
                                         <div className=' flex justify-center items-center h-60 overflow-hidden '>
                                             <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-full w-auto h-auto group-hover:skew-y-3 group-hover:scale-125 sca transition-all duration-700 ease-in' loading=' lazy ' />

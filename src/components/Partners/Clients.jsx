@@ -48,13 +48,13 @@ const Clients = () => {
           modules={[Autoplay, FreeMode]}
           className="pt-5 px-2 pb-2"
         > */}
-        <section className=' flex flex-wrap justify-center items-center gap-3 p-2'>
+        <section className=' grid grid-cols-9 gap-3 p-2'>
           {
             ourClients && ourClients.map((item, index) => (
               // <SwiperSlide key={index} className=' h-auto '>
               <Link key={index} to={item.website} target='_blank'>
-                <div title={item.name} className='w-full  bg-white rounded-md group h-auto'>
-                  <div className=' shadow shadow-slate-400 rounded-md flex justify-center items-center h-14 w-28 overflow-hidden '>
+                <div title={item.name} className='w-full bg-white shadow shadow-slate-400 rounded-md group h-auto'>
+                  <div className=' flex justify-center items-center h-14 w-28 overflow-hidden '>
                     <img src={`${item.img}`} alt={index + 1} className='object-cover w-auto h-auto max-h-full p-1' loading='lazy' />
                   </div>
                 </div>

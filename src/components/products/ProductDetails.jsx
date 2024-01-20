@@ -8,7 +8,6 @@ const ProductDetails = () => {
     const selectedProduct = {
         "id": 1,
         "name": "Product1",
-        "route": "/product1",
         "img": "https://drive.google.com/thumbnail?id=1EKuz9Ht-v2dWTp1ivHA35B01wTjgkbPb"
     }
 

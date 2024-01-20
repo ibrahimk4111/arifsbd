@@ -82,7 +82,7 @@ const Navbar = () => {
                             <Typography className=" text-sm font-semibold ">Gallery</Typography>
                         </MenuItem>
                     </Link>
-                    <Link smooth to="/#contact">
+                    <Link smooth to="#contact">
                         <MenuItem className=" hover:bg-theme hover:text-black transition duration-300 ease-in text-white flex justify-center items-center gap-2 rounded-lg">
                             <ContactSupport className=" text-lg " />
                             <Typography className=" text-sm font-semibold ">Contact</Typography>

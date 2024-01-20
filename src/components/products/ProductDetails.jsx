@@ -9,7 +9,7 @@ const ProductDetails = () => {
         "id": 1,
         "name": "Product1",
         "route": "/product1",
-        "img": "https://drive.google.com/thumbnail?id=1HuSNXPQqPSdzyvVNKne114_7B0jGM3T9"
+        "img": "https://drive.google.com/thumbnail?id=1EKuz9Ht-v2dWTp1ivHA35B01wTjgkbPb"
     }
 
     return (
@@ -23,8 +23,8 @@ const ProductDetails = () => {
                 </div>
                 <div className=' grid lg:grid-cols-12 grid-cols-1 gap-10'>
                     {/* left side image section */}
-                    <div className=' lg:col-span-4 border-2 rounded-lg group overflow-hidden'>
-                        <img src={selectedProduct.img} alt="..." className=' object-cover w-full h-auto group-hover:skew-y-3 group-hover:scale-105 sca transition-all duration-300 ease-in' loading=' lazy ' />
+                    <div className=' lg:col-span-4 flex justify-center items-center border-2 rounded-lg group overflow-hidden'>
+                        <img src={selectedProduct.img} alt="..." className=' object-cover w-[70%] h-auto group-hover:skew-y-3 group-hover:scale-105 sca transition-all duration-300 ease-in' loading=' lazy ' />
                     </div>
                     
                     {/* right side details section */}
@@ -37,7 +37,7 @@ const ProductDetails = () => {
                                 </div>
                                 <div className=' lg:col-span-2'>
                                     <div className=' flex justify-end items-end '>
-                                        <Link to="/#contact" className='lg:text-base text-sm text-center text-slate-500 hover:text-white w-auto bg-[#e0fffa] hover:bg-theme rounded-xl p-1 transition-all duration-300 ease-in '> Buy Now </Link>
+                                        <Link to="#contact" className='lg:text-base text-sm text-center text-slate-500 hover:text-white w-auto bg-[#e0fffa] hover:bg-theme rounded-xl p-1 transition-all duration-300 ease-in '> Buy Now </Link>
                                     </div>
                                 </div>
                             </div>

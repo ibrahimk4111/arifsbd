@@ -22,7 +22,7 @@ const ProductDetails = () => {
                 </div>
                 <div className=' grid lg:grid-cols-12 grid-cols-1 gap-10'>
                     {/* left side image section */}
-                    <div className=' lg:col-span-4 flex justify-center items-center border-2 rounded-lg group overflow-hidden'>
+                    <div className=' lg:col-span-4 flex justify-center items-center lg:h-auto h-[20vh] border-2 rounded-lg group overflow-hidden'>
                         <img src={selectedProduct.img} alt="..." className=' object-cover w-[70%] h-auto group-hover:skew-y-3 group-hover:scale-105 sca transition-all duration-300 ease-in' loading=' lazy ' />
                     </div>
                     

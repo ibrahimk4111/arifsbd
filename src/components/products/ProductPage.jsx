@@ -11,8 +11,6 @@ const ProductPage = () => {
         <div className='py-16 bg-[#f4fffd]'>
             <Container>
                 <div>
-
-
                     <div className=' grid lg:grid-cols-12 grid-cols-1 justify-center items-center gap-5 pb-10 '>
                         <p className=' lg:col-span-6 text-3xl lg:[word-spacing:3px] lg:leading-relaxed leading-loosed'>
                             We aim to reach out worldwide Veterinary medicines, vaccines, Livestock nutritional products and equipments aimed to expand our presence in global markets.
@@ -29,7 +27,7 @@ const ProductPage = () => {
                                 <Link to="/productDetails/:id" key={index}>
                                     <div className=' relative group border-[1px] rounded-md'>
                                         <div className=' flex justify-center items-center h-60 overflow-hidden '>
-                                            <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-[90%] w-[60%] h-auto group-hover:skew-y-3 group-hover:scale-105 sca transition-all duration-700 ease-in' loading=' lazy ' />
+                                            <img src={`${item.img}`} alt={item.id} className=' object-cover max-h-full max-w-[90%] lg:w-[50%] w-[70%] h-auto group-hover:skew-y-2 group-hover:scale-105 sca transition-all duration-700 ease-in' loading=' lazy ' />
                                         </div>
 
                                         <div className=' flex justify-center items-end absolute bottom-0 w-full h-0 opacity-0 group-hover:h-28 group-hover:opacity-100 z-10 group-hover:bg-gradient-to-t from-theme p-3 transition-height duration-200 ease-in group-hover:rounded-md'>

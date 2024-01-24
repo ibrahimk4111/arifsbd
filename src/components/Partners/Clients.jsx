@@ -18,7 +18,7 @@ const Clients = () => {
           <h1 className='uppercase font-semibold text-xl text-slate-400'> Our Clients </h1>
         </div>
         <hr className=' h-[2px] bg-theme my-2 rounded-full w-full mb-5' />
-        <section className=' grid lg:grid-cols-9 sm:grid-cols-4 gap-3 p-2'>
+        <section className=' grid lg:grid-cols-9 sm:grid-cols-6 grid-cols-4 gap-3 p-2'>
           {
             ourClients && ourClients.map((item, index) => (
               <Link key={index} to={item.website} target='_blank'>

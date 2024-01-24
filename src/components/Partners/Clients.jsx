@@ -18,40 +18,9 @@ const Clients = () => {
           <h1 className='uppercase font-semibold text-xl text-slate-400'> Our Clients </h1>
         </div>
         <hr className=' h-[2px] bg-theme my-2 rounded-full w-full mb-5' />
-
-        {/* <Swiper
-          speed={1300}
-          freeMode={true}
-          autoplay={{
-            delay: 1000,
-            reverseDirection: true,
-            disableOnInteraction: false
-          }}
-          breakpoints={{
-            0: {
-              spaceBetween: 10,
-              slidesPerView: 2.2
-            },
-            640: {
-              spaceBetween: 10,
-              slidesPerView: 2.2
-            },
-            768: {
-              spaceBetween: 10,
-              slidesPerView: 3.2
-            },
-            1024: {
-              spaceBetween: 10,
-              slidesPerView: 4.2
-            }
-          }}
-          modules={[Autoplay, FreeMode]}
-          className="pt-5 px-2 pb-2"
-        > */}
-        <section className=' grid grid-cols-9 gap-3 p-2'>
+        <section className=' grid lg:grid-cols-9 sm:grid-cols-4 gap-3 p-2'>
           {
             ourClients && ourClients.map((item, index) => (
-              // <SwiperSlide key={index} className=' h-auto '>
               <Link key={index} to={item.website} target='_blank'>
                 <div title={item.name} className='w-full bg-white shadow shadow-slate-400 rounded-md group h-auto'>
                   <div className=' flex justify-center items-center h-14 w-28 overflow-hidden '>
@@ -59,11 +28,9 @@ const Clients = () => {
                   </div>
                 </div>
               </Link>
-              // </SwiperSlide>
             ))
           }
         </section>
-        {/* </Swiper> */}
       </Container>
     </div>
   )

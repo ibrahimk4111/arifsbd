@@ -6,6 +6,8 @@ import { KeyboardArrowDown } from '@mui/icons-material';
 export default function CompanyLogo() {
 
   const [isOpen, setIsOpen] = useState(false)
+  const [loca, setLoca] = useState({})
+
 
   const sisterConcerns = [{
     "link": "/",
@@ -16,37 +18,37 @@ export default function CompanyLogo() {
     "name": "Orbit Agrovet Limited"
   }]
 
-  const locationTrack = () =>{
-    if(navigator.geolocation){
-      navigator.geolocation.getCurrentPosition((position)=>{
-        const {latitude, longitude} = position.coords
-        console.log("lat:", latitude, "long:", longitude)
+  const locationTrack = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords
+        setLoca({ latitude, longitude })
       })
-    }else{
-      console.log(error)
     }
   }
+
 
   return (
     <Container className=' flex justify-between items-center p-2'>
       {/* top nav left */}
       <div className=' flex items-center overflow-hidden col-span-2'>
-        <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' loading='lazy'/>
+        <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' loading='lazy' />
         <h1 className=' md:text-2xl text-base '> (Bangladesh) Limited</h1>
         <button className=' bg-red-500' onClick={locationTrack}>location</button>
+        <p>lat: {loca.latitude} & Long: {loca.longitude}</p>
       </div>
 
       {/* top nav right */}
       <div className=" group relative ">
         <MenuItem
-          onClick={()=>setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
           className=" hover:bg-theme text-black hover:text-white rounded-lg overflow-hidden flex gap-1 px-1 shadow "
         >
           <Typography className=' text-xs '>Sister Conserns</Typography>
           <KeyboardArrowDown />
         </MenuItem>
         <Typography
-          className={`z-[1000] scale-0 lg:group-hover:scale-100 flex flex-col transition duration-300 divide-y-2 divide-white absolute right-0 bg-slate-100 shadow-lg rounded-lg ${isOpen ? "scale-100": "scale-0"}`}
+          className={`z-[1000] scale-0 lg:group-hover:scale-100 flex flex-col transition duration-300 divide-y-2 divide-white absolute right-0 bg-slate-100 shadow-lg rounded-lg ${isOpen ? "scale-100" : "scale-0"}`}
         >
           {
             sisterConcerns.map((item, index) => (

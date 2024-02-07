@@ -6,7 +6,7 @@ import { KeyboardArrowDown } from '@mui/icons-material';
 export default function CompanyLogo() {
 
   const [isOpen, setIsOpen] = useState(false)
-  const [loca, setLoca] = useState({})
+  // const [loca, setLoca] = useState({})
 
 
   const sisterConcerns = [{
@@ -18,14 +18,14 @@ export default function CompanyLogo() {
     "name": "Orbit Agrovet Limited"
   }]
 
-  const locationTrack = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        const { latitude, longitude } = position.coords
-        setLoca({ latitude, longitude })
-      })
-    }
-  }
+  // const locationTrack = () => {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition((position) => {
+  //       const { latitude, longitude } = position.coords
+  //       setLoca({ latitude, longitude })
+  //     })
+  //   }
+  // }
 
 
   return (
@@ -34,8 +34,8 @@ export default function CompanyLogo() {
       <div className=' flex items-center overflow-hidden col-span-2'>
         <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' loading='lazy' />
         <h1 className=' md:text-2xl text-base '> (Bangladesh) Limited</h1>
-        <button className=' bg-red-500' onClick={locationTrack}>location</button>
-        <p>lat: {loca.latitude} & Long: {loca.longitude}</p>
+        {/* <button className=' bg-red-500' onClick={locationTrack}>location</button> */}
+        {/* <p>lat: {loca.latitude} & Long: {loca.longitude}</p> */}
       </div>
 
       {/* top nav right */}

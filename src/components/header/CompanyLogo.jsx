@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Button, MenuItem, Typography } from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link'
 import { KeyboardArrowDown } from '@mui/icons-material';
@@ -16,12 +16,24 @@ export default function CompanyLogo() {
     "name": "Orbit Agrovet Limited"
   }]
 
+  const locationTrack = () =>{
+    if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition((position)=>{
+        const {latitude, longitude} = position.coords
+        console.log("lat:", latitude, "long:", longitude)
+      })
+    }else{
+      console.log(error)
+    }
+  }
+
   return (
     <Container className=' flex justify-between items-center p-2'>
       {/* top nav left */}
       <div className=' flex items-center overflow-hidden col-span-2'>
         <img src=" /arifsbd/images/logo.png" alt="..." className=' object-cover lg:w-32 w-16 ' loading='lazy'/>
         <h1 className=' md:text-2xl text-base '> (Bangladesh) Limited</h1>
+        <button className=' bg-red-500' onClick={locationTrack}>location</button>
       </div>
 
       {/* top nav right */}

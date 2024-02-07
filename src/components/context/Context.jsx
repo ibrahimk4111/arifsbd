@@ -53,14 +53,14 @@ const TaskProvider = ({ children }) => {
     },
     hidden: (i) => ({
       opacity: 0,
-      x: i > 15 ? i * 30 : i > 5 ? i * 30 : i * 70,
+      y: i > 15 ? i * 30 : i > 5 ? i * 30 : i * 70,
       transition: {
         duration: i * 0.3
       },
     }),
     visible: (i) => ({
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         duration: i > 15 ? Math.abs(i) * 0.1 : i > 5 ? Math.abs(i) * 0.3 : Math.abs(i) * 0.7,
         delay: i > 15 ? Math.abs(i) * 0.1 : i > 5 ? Math.abs(i) * 0.2 : Math.abs(i) * 0.3

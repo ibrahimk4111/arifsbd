@@ -8,6 +8,7 @@ import NotificationDrawer from "./NotificationDrawer";
 import { useContext } from "react";
 import { UserContext } from "../context/Context";
 import { motion } from 'framer-motion';
+import { paths } from "../Utils/Paths";
 
 
 const Navbar = () => {
@@ -15,8 +16,8 @@ const Navbar = () => {
     const { isVisible } = useContext(UserContext)
     return (
         <motion.div
-            initial={{opacity:0, y:-200}}
-            animate={{opacity:1, y:0, transition:{duration:0.9}}}
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.9 } }}
             className={` flex justify-center items-center z-50 bg-theme text-white shadow w-full shadow-slate-700 ${isVisible ? "fixed top-0 h-16 transition-height duration-300 ease-in " : "h-12"}`}>
             <Container className=" flex justify-between items-center ">
                 {/* toggle icon */}
@@ -26,6 +27,14 @@ const Navbar = () => {
                             <MenuRounded />
                         </IconButton>
                     </TemporaryDrawer>
+                </Box>
+
+                <Box className="lg:hidden block">
+                    <Link to={paths.products}>
+                        <MenuItem className="hover:bg-theme text-white hover:text-black underline underline-offset-4">
+                            <Typography className=" text-base ">Products</Typography>
+                        </MenuItem>
+                    </Link>
                 </Box>
 
                 {/* main navbar */}
@@ -90,7 +99,6 @@ const Navbar = () => {
                     </Link>
                 </Box>
 
-                {/* <Box sx={{ flexGrow: 1 }} /> */}
                 <Box>
                     <NotificationDrawer>
                         <IconButton size="large" className=" hover:text-black transition duration-300 ease-in text-white animate-bounce">

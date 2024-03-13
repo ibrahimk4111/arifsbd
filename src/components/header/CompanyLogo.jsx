@@ -18,14 +18,17 @@ export default function CompanyLogo() {
     "name": "Orbit Agrovet Limited"
   }]
 
-  // const locationTrack = () => {
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition((position) => {
-  //       const { latitude, longitude } = position.coords
-  //       setLoca({ latitude, longitude })
-  //     })
+  // useEffect(() => {
+  //   const locationTrack = () => {
+  //     if (navigator.geolocation) {
+  //       navigator.geolocation.getCurrentPosition((position) => {
+  //         const { latitude, longitude } = position.coords
+  //         setLoca({ latitude, longitude })
+  //       })
+  //     }
   //   }
-  // }
+  //   locationTrack();
+  // }, [])
 
 
   return (

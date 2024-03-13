@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { UserContext } from '../context/Context'
 import { Container } from '@mui/material'
 import { HashLink as Link } from 'react-router-hash-link'
+import { paths } from '../Utils/Paths'
 
 const Products = () => {
     const { productData } = useContext(UserContext)
@@ -19,7 +20,7 @@ const Products = () => {
                             We manufacture the best Veterinary medicines, vaccines, Livestock nutritional products and equipments completely with passion, simplicity & creativity. We export Veterinary medicines, vaccines, Livestock nutritional products and equipments throughout the country.
                         </p>
                     </div>
-                    <div className=' flex justify-end items-end m-2'><Link to="/productpage" className='text-center text-slate-500 hover:text-white w-auto hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see all products </Link></div>
+                    <div className=' flex justify-end items-end m-2'><Link to={paths.products} className='text-center text-slate-500 hover:text-white w-auto hover:bg-slate-700 rounded-lg p-1 transition duration-300 ease-in '> see all products </Link></div>
 
                     <section className=' grid sm:grid-cols-4 grid-cols-2 gap-2'>
                         {

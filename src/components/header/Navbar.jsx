@@ -101,11 +101,12 @@ const Navbar = () => {
 
                 <Box>
                     <NotificationDrawer>
-                        <IconButton size="large" className=" hover:text-black transition duration-300 ease-in text-white animate-bounce">
-                            <Badge badgeContent="" variant="dot" color="primary">
-                                <Notifications />
-                            </Badge>
-                        </IconButton>
+                        {/* <IconButton size="large" className=" hover:text-black transition duration-300 ease-in text-white"> */}
+                        <Link className=" relative ">
+                            <Badge badgeContent="" variant="dot" color="warning" className=" animate-ping absolute top-0 right-0 "></Badge>
+                            <Notifications />
+                        </Link>
+                        {/* </IconButton> */}
                     </NotificationDrawer>
                 </Box>
             </Container>

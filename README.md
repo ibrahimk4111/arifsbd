@@ -1,3 +1,44 @@
+#### This is a volunteer foundation website
+
+made by using NextJs, Typescript, TailwindCSS, Shadecn as an external packages.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # All the ERRORS from this project
